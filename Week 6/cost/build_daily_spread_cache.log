@@ -1,0 +1,26 @@
+Source: d:\Quant Finance\Quant Program\Week 5\data\microstructure\spreads_1min.parquet  (7.49 GB)
+Dest:   D:\Quant Finance\Quant Program\Week 6\cost\daily_spread_cache.parquet
+
+  parquet: 526 row groups, 195,252,716 rows total
+
+  row group  50/526 | seen= 19,157,871 valid= 19,157,871 | 10s (1,984,655 rows/s)
+  row group 100/526 | seen= 38,081,674 valid= 38,081,674 | 19s (2,002,591 rows/s)
+  row group 150/526 | seen= 57,153,134 valid= 57,153,134 | 29s (1,993,418 rows/s)
+  row group 200/526 | seen= 74,709,036 valid= 74,709,036 | 38s (1,979,965 rows/s)
+  row group 250/526 | seen= 93,410,127 valid= 93,410,127 | 47s (1,982,013 rows/s)
+  row group 300/526 | seen=112,418,793 valid=112,418,793 | 57s (1,978,099 rows/s)
+  row group 350/526 | seen=130,676,050 valid=130,676,050 | 66s (1,984,237 rows/s)
+  row group 400/526 | seen=148,974,469 valid=148,974,469 | 75s (1,984,573 rows/s)
+  row group 450/526 | seen=166,523,699 valid=166,523,699 | 84s (1,983,249 rows/s)
+  row group 500/526 | seen=185,377,802 valid=185,377,802 | 94s (1,981,830 rows/s)
+  row group 526/526 | seen=195,252,716 valid=195,252,716 | 99s (1,982,051 rows/s)
+
+Aggregating across row groups (526 chunks)...
+  daily rows: 544,223
+  unique tickers: 526
+  date range: 2022-01-03 .. 2026-03-19
+  half_spread_bps  percentiles 25/50/75: [3.46550322 4.75216913 6.59283352]
+  spread_std_1d    percentiles 25/50/75: [2.57266111 3.63482031 5.2627909 ]
+  median bars/day: 387
+
+Wrote D:\Quant Finance\Quant Program\Week 6\cost\daily_spread_cache.parquet  (7.4 MB) in 99s
