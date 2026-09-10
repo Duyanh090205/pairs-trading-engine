@@ -1,0 +1,86 @@
+V3.0 pipeline | z_strategy=fixed, z_base=3.5, z_norm=formation
+Folds: 6 | out_dir=d:\Quant Finance\Quant Program\Week 6\results\v3\cmp_formation
+Loading data caches...
+  loaded 528 1-min + 528 5-min tickers in 28.1s
+
+  Fold 01 [2022-07]: slicing formation 5-min cache for 2022-01-03 -> 2022-06-30
+  Fold 01 [2022-07]: formation data: 510 tickers ready
+  [discovery] starting fold 2022-01-03 -> 2022-06-30
+  [discovery] loaded 510 formation tickers
+  [discovery] hard screens: 500 survivors
+  [discovery] fitting factor model (PCA via SVD)...
+  [discovery] running pairwise Johansen on 500 tickers (124750 pairs)...
+  [discovery] pairwise tests done: 124750 pairs passed overlap+PCA+Johansen
+WARNING FALLBACK CAP: kept top 500 pairs by Johansen p-value
+  Fold 01 [2022-07]: discovery: 198 pairs (after beta>0 filter), factor cum_var=0.619
+  Fold 01 [2022-07]: persistence gate: 26 pairs
+  Fold 01 [2022-07]: trading data: 500 residual ticker series
+  Fold 01 [2022-07]: complete in 82.8s -- n_trades=4, sharpe=-4.815, total_return=-0.0096
+  Fold 02 [2022-08]: slicing formation 5-min cache for 2022-02-01 -> 2022-07-31
+  Fold 02 [2022-08]: formation data: 510 tickers ready
+  [discovery] starting fold 2022-02-01 -> 2022-07-31
+  [discovery] loaded 510 formation tickers
+  [discovery] hard screens: 501 survivors
+  [discovery] fitting factor model (PCA via SVD)...
+  [discovery] running pairwise Johansen on 501 tickers (125250 pairs)...
+  [discovery] pairwise tests done: 125250 pairs passed overlap+PCA+Johansen
+WARNING FALLBACK CAP: kept top 500 pairs by Johansen p-value
+  Fold 02 [2022-08]: discovery: 217 pairs (after beta>0 filter), factor cum_var=0.688
+  Fold 02 [2022-08]: persistence gate: 20 pairs
+  Fold 02 [2022-08]: trading data: 501 residual ticker series
+  Fold 02 [2022-08]: complete in 88.4s -- n_trades=3, sharpe=-4.071, total_return=-0.0020
+  Fold 03 [2022-09]: slicing formation 5-min cache for 2022-03-01 -> 2022-08-31
+  Fold 03 [2022-09]: formation data: 510 tickers ready
+  [discovery] starting fold 2022-03-01 -> 2022-08-31
+  [discovery] loaded 510 formation tickers
+  [discovery] hard screens: 500 survivors
+  [discovery] fitting factor model (PCA via SVD)...
+  [discovery] running pairwise Johansen on 500 tickers (124750 pairs)...
+  [discovery] pairwise tests done: 124750 pairs passed overlap+PCA+Johansen
+WARNING FALLBACK CAP: kept top 500 pairs by Johansen p-value
+  Fold 03 [2022-09]: discovery: 199 pairs (after beta>0 filter), factor cum_var=0.668
+  Fold 03 [2022-09]: persistence gate: 21 pairs
+  Fold 03 [2022-09]: trading data: 500 residual ticker series
+  Fold 03 [2022-09]: complete in 94.8s -- n_trades=1370, sharpe=-13.285, total_return=-0.2192
+  Fold 04 [2022-10]: slicing formation 5-min cache for 2022-04-01 -> 2022-09-30
+  Fold 04 [2022-10]: formation data: 510 tickers ready
+  [discovery] starting fold 2022-04-01 -> 2022-09-30
+  [discovery] loaded 510 formation tickers
+  [discovery] hard screens: 501 survivors
+  [discovery] fitting factor model (PCA via SVD)...
+  [discovery] running pairwise Johansen on 501 tickers (125250 pairs)...
+  [discovery] pairwise tests done: 125250 pairs passed overlap+PCA+Johansen
+WARNING FALLBACK CAP: kept top 500 pairs by Johansen p-value
+  Fold 04 [2022-10]: discovery: 195 pairs (after beta>0 filter), factor cum_var=0.677
+  Fold 04 [2022-10]: persistence gate: 26 pairs
+  Fold 04 [2022-10]: trading data: 501 residual ticker series
+  Fold 04 [2022-10]: complete in 95.1s -- n_trades=272, sharpe=-8.538, total_return=-0.0273
+  Fold 05 [2022-11]: slicing formation 5-min cache for 2022-05-01 -> 2022-10-31
+  Fold 05 [2022-11]: formation data: 510 tickers ready
+  [discovery] starting fold 2022-05-01 -> 2022-10-31
+  [discovery] loaded 510 formation tickers
+  [discovery] hard screens: 502 survivors
+  [discovery] fitting factor model (PCA via SVD)...
+  [discovery] running pairwise Johansen on 502 tickers (125751 pairs)...
+  [discovery] pairwise tests done: 125751 pairs passed overlap+PCA+Johansen
+WARNING FALLBACK CAP: kept top 500 pairs by Johansen p-value
+  Fold 05 [2022-11]: discovery: 170 pairs (after beta>0 filter), factor cum_var=0.683
+  Fold 05 [2022-11]: persistence gate: 37 pairs
+  Fold 05 [2022-11]: trading data: 502 residual ticker series
+  Fold 05 [2022-11]: complete in 94.7s -- n_trades=130, sharpe=-2.855, total_return=-0.0361
+  Fold 06 [2022-12]: slicing formation 5-min cache for 2022-06-01 -> 2022-11-30
+  Fold 06 [2022-12]: formation data: 511 tickers ready
+  [discovery] starting fold 2022-06-01 -> 2022-11-30
+  [discovery] loaded 511 formation tickers
+  [discovery] hard screens: 502 survivors
+  [discovery] fitting factor model (PCA via SVD)...
+  [discovery] running pairwise Johansen on 502 tickers (125751 pairs)...
+  [discovery] pairwise tests done: 125751 pairs passed overlap+PCA+Johansen
+WARNING FALLBACK CAP: kept top 500 pairs by Johansen p-value
+  Fold 06 [2022-12]: discovery: 146 pairs (after beta>0 filter), factor cum_var=0.661
+  Fold 06 [2022-12]: persistence gate: 34 pairs
+  Fold 06 [2022-12]: trading data: 502 residual ticker series
+  Fold 06 [2022-12]: complete in 95.5s -- n_trades=172, sharpe=-8.214, total_return=-0.0199
+
+Wrote d:\Quant Finance\Quant Program\Week 6\results\v3\cmp_formation\fold_metrics.csv (6 rows)
+Wrote factor_loadings_per_fold.parquet (15030 rows)

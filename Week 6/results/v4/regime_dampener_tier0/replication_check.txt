@@ -1,0 +1,44 @@
+2023-01: halt calc=False rec=False OK
+2023-02: halt calc=False rec=False OK
+2023-03: halt calc=False rec=False OK
+2023-04: halt calc=False rec=False OK
+2023-05: halt calc=False rec=False OK
+2023-06: halt calc=True rec=True OK | stress_z calc=-0.2561 rec=-0.2561 d=0.0000 OK
+2023-07: halt calc=False rec=False OK
+2023-08: halt calc=False rec=False OK
+2023-09: halt calc=False rec=False OK
+2023-10: halt calc=False rec=False OK
+2023-11: halt calc=False rec=False OK
+2023-12: halt calc=False rec=False OK
+2024-01: halt calc=False rec=False OK
+2024-02: halt calc=True rec=True OK | stress_z calc=-0.4465 rec=-0.4465 d=0.0000 OK
+2024-03: halt calc=True rec=True OK | stress_z calc=3.6750 rec=3.6750 d=0.0000 OK
+2024-04: halt calc=True rec=True OK | stress_z calc=0.9658 rec=0.9658 d=0.0000 OK
+2024-05: halt calc=True rec=True OK | stress_z calc=0.0063 rec=0.0063 d=0.0000 OK
+2024-06: halt calc=False rec=False OK
+2024-07: halt calc=True rec=True OK | stress_z calc=4.1998 rec=4.1998 d=0.0000 OK
+2024-08: halt calc=True rec=True OK | stress_z calc=2.0705 rec=2.0705 d=0.0000 OK
+2024-09: halt calc=False rec=False OK
+2024-10: halt calc=True rec=True OK | stress_z calc=1.9150 rec=1.9150 d=0.0000 OK
+2024-11: halt calc=False rec=False OK
+2024-12: halt calc=False rec=False OK
+2025-01: halt calc=False rec=False OK
+2025-02: halt calc=False rec=False OK
+2025-03: halt calc=False rec=False OK
+2025-04: halt calc=False rec=False OK
+2025-05: halt calc=False rec=False OK
+2025-06: halt calc=False rec=False OK
+2025-07: halt calc=False rec=False OK
+2025-08: halt calc=False rec=False OK
+2025-09: halt calc=False rec=False OK
+2025-10: halt calc=False rec=False OK
+2025-11: halt calc=False rec=False OK
+2025-12: halt calc=True rec=True OK | stress_z calc=2.0675 rec=2.0675 d=0.0000 OK
+2026-01: halt calc=True rec=True OK | stress_z calc=0.9342 rec=0.9342 d=0.0000 OK
+2026-02: halt calc=True rec=True OK | stress_z calc=1.4418 rec=1.4418 d=0.0000 OK
+2026-03: halt calc=True rec=True OK | stress_z calc=2.2437 rec=2.2437 d=0.0000 OK
+2026-04: halt calc=False rec=False | stress_z calc=0.9727 rec=0.9727 d=0.0000 OK
+2026-05: halt calc=True rec=True | stress_z calc=1.5281 rec=1.5281 d=0.0000 OK
+2026-06: halt calc=True rec=True | stress_z calc=1.5668 rec=1.5668 d=0.0000 OK
+2026-07: halt calc=True rec=True | stress_z calc=2.0791 rec=2.0791 d=0.0000 OK
+GATE V0: PASS (halt 39/39, stress_z 12/12, replay 4/4)

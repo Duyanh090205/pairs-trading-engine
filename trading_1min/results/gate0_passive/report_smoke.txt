@@ -1,0 +1,37 @@
+===== GATE 0 PASSIVE EXEC (smoke) — spec gate0_passive_exec_spec.md =====
+universe 100 | ETF trong universe: GLD, IWM, QQQ, SPY, TLT, XLI, XLK, XLP, XLV, XLY, XOP
+leaders (smoke): QQQ, SPY | ky: 2024-01-02 -> 2024-01-26
+[events]  QQQ: raw    48 -> sau refractory    41
+[events]  SPY: raw    49 -> sau refractory    41
+[events] dedup: 57 phut tin hieu / 17 phien (~3.4/phien)
+[z-bucket] [3,4): 41  [4,6): 14  [6+): 2
+  ... 10 follower xong (2s)
+  ... 12 follower xong (2s)
+[followers] 12 ma co du lieu | skip no_bar trung binh 0.0/ma | invalid L1 trung binh 0.0%
+
+[pooled] equal-weight follower — f | IS (bp) | cost_eff (bp):
+  V1 bid     through: f 57.6% | IS  +2.82 | cost_eff  2.22
+  V1 bid     touch  : f 60.8% | IS  +2.15 | cost_eff  1.87
+  V2 mid-1/4 through: f 69.0% | IS  +3.57 | cost_eff  2.90
+  V2 mid-1/4 touch  : f 73.1% | IS  +3.09 | cost_eff  2.64
+  V3 mid     through: f 83.8% | IS  +4.24 | cost_eff  3.80
+  V3 mid     touch  : f 88.5% | IS  +3.72 | cost_eff  3.47
+
+[gate] follower dau (cost<=1.5bp, f>=25% — smoke: chua ap san attempts):
+  V1 bid    : through   0 | touch   4
+  V2 mid-1/4: through   0 | touch   1
+  V3 mid    : through   0 | touch   0
+[gate] bien the chung (max through): V1 bid
+
+[adverse] drift 15' sau quyet dinh (V1 through, pooled): filled -1.41bp (n=394) | unfilled +7.49bp (n=290)
+[adverse] markout sau-KHOP (Huang-Stoll): 1': -0.07bp | 5': -0.05bp | 15': +0.86bp
+[adverse] half-spread tai phut tin hieu 3.34bp vs control 3.35bp
+[control] through: f 52.8% | IS  +2.45bp (vs signal IS  +2.82bp)
+[control] touch  : f 57.9% | IS  +1.77bp (vs signal IS  +2.15bp)
+[intensity] (V1 through) bucket: f | IS | n:
+  z [3,4) : f 52.8% | IS  +1.83bp | n 492
+  z [4,6) : f 68.5% | IS  +3.38bp | n 168
+  z [6+)  : f 79.2% | IS  -0.83bp | n 24
+
+KHOI-TEST xong — chua ap luat. TRINH USER truoc khi chay full.
+tong: 2s

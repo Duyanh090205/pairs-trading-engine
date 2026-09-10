@@ -1,0 +1,37 @@
+nap 1-min cho 324 ma ...
+nap xong 324 ma (15s)
+[OUT-OF-FIT] fit W: T=2496 bar 5-min, 324 ma, cum_var=0.721
+[OUT-OF-FIT] residual 1-min: 324 ma, T=12089
+[IN-FIT] fit W: T=4857 bar 5-min, 324 ma, cum_var=0.635
+[IN-FIT] residual 1-min: 324 ma, T=24780
+
+=========== DIAGNOSTIC A-L SINGLE-NAME RESIDUAL, Q3/2024 ===========
+--- OUT-OF-FIT (so trung thuc): 304 co phieu (ETF tach rieng: 20) ---
+  HL: p25 878p | median 1331p | p75 1870p | NaN/drift: 0
+  HL trong [2,390p]: 7/304 ma
+  bien do (std vs rolling-mean 1 ngay): median 62.0 bps | p75 83.7
+  cat mean/ngay: median 11.1
+  phi tham chieu: median 14.3 bps
+  RATIO amp/cost: >=2x: 294 ma | 1-2x: 10 | <1x: 0
+  TRONG HL-BAND: 7 ma — ratio>=2x: 7 | 1-2x: 0
+
+--- IN-FIT (tran lac quan): 304 co phieu (ETF tach rieng: 20) ---
+  HL: p25 1538p | median 2158p | p75 3209p | NaN/drift: 0
+  HL trong [2,390p]: 0/304 ma
+  bien do (std vs rolling-mean 1 ngay): median 69.7 bps | p75 95.4
+  cat mean/ngay: median 10.8
+  phi tham chieu: median 14.3 bps
+  RATIO amp/cost: >=2x: 299 ma | 1-2x: 5 | <1x: 0
+  TRONG HL-BAND: 0 ma — ratio>=2x: 0 | 1-2x: 0
+
+TOP 20 (out-of-fit, trong HL band, theo ratio):
+ticker hl_min amp_std_bps crossings_day cost_rt_bps ratio_std
+   TGT    371       135.6           8.2        11.9     11.44
+  NFLX    359        68.6           8.7         8.1      8.44
+   AMD    387        87.7           9.5        15.5      5.66
+  UBER    342        83.7           8.3        18.8      4.46
+  PCAR    386        57.3          11.1        13.1      4.39
+   MMM    187        45.9          12.9        12.0      3.81
+   SRE    319        38.7          11.7        12.6      3.06
+
+tong: 36s

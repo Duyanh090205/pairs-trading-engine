@@ -1,0 +1,43 @@
+===== LEAD-LAG SCAN (full) — spec pre-commit leadlag_spec.md =====
+universe 100 | 128 phien | 49,386 bar
+fit 64 phien (2024-07-01->2024-09-30) | oof 64 phien (2024-10-01->2024-12-31)
+[detection] n_fit/lag ~24,717 | p_cut BH = 2.25e-03 | survivor (cap,lag): 13,530 / 300,000
+[null 1/20] survivor gia: 3678
+[null 2/20] survivor gia: 3656
+[null 3/20] survivor gia: 3529
+[null 4/20] survivor gia: 3829
+[null 5/20] survivor gia: 3502
+[null 6/20] survivor gia: 3911
+[null 7/20] survivor gia: 3797
+[null 8/20] survivor gia: 3513
+[null 9/20] survivor gia: 4077
+[null 10/20] survivor gia: 3808
+[null 11/20] survivor gia: 3977
+[null 12/20] survivor gia: 3737
+[null 13/20] survivor gia: 3851
+[null 14/20] survivor gia: 3869
+[null 15/20] survivor gia: 3740
+[null 16/20] survivor gia: 3612
+[null 17/20] survivor gia: 3824
+[null 18/20] survivor gia: 3816
+[null 19/20] survivor gia: 3700
+[null 20/20] survivor gia: 3717
+[null] survivor gia: median 3768, max 4077
+[confirmation] (cap,lag) xac nhan OOF: 2,094 | cap co >=1 lag xac nhan: 1,881
+[economic] top 10 theo EDGE:
+    TEL -> LLY   lag 2 cum_rho_oof -0.1878 sigma 8.5bp EDGE 1.60bp vs san phi 4.36bp fail
+    JNJ -> TSLA  lag 1 cum_rho_oof -0.0929 sigma 14.2bp EDGE 1.32bp vs san phi 8.82bp fail
+    CME -> CDNS  lag 8 cum_rho_oof -0.1610 sigma 8.1bp EDGE 1.31bp vs san phi 6.99bp fail
+    QQQ -> PANW  lag 4 cum_rho_oof +0.1464 sigma 8.4bp EDGE 1.23bp vs san phi 7.26bp fail
+    SPY -> PANW  lag 1 cum_rho_oof +0.1357 sigma 8.4bp EDGE 1.14bp vs san phi 7.26bp fail
+    CME -> PANW  lag 1 cum_rho_oof -0.1355 sigma 8.4bp EDGE 1.14bp vs san phi 7.26bp fail
+    CME -> NXPI  lag 7 cum_rho_oof -0.1300 sigma 8.6bp EDGE 1.12bp vs san phi 7.94bp fail
+    XLP -> AMAT  lag 1 cum_rho_oof -0.1300 sigma 8.4bp EDGE 1.09bp vs san phi 9.19bp fail
+    MMM -> LULU  lag10 cum_rho_oof -0.1123 sigma 9.6bp EDGE 1.07bp vs san phi 6.45bp fail
+    XLK -> AMZN  lag18 cum_rho_oof +0.1738 sigma 6.2bp EDGE 1.07bp vs san phi 8.44bp fail
+[economic] cap vuot san phi: 0 (can >= 10)
+
+**********************************************************************
+PHAN QUYET: DONG HO 2 VINH VIEN o cau truc phi hien tai (0 cap vuot san, can 10).
+**********************************************************************
+tong: 24s

@@ -1,0 +1,20 @@
+BUOC 0: 324 ma vao factor model ...
+        PCA 5 factors: aligned T=4857 bar 5-min, 324 ma, cum_var=0.635
+        so cap = 52,326
+BUOC 1: Johansen 5-min tren RESIDUAL, 14 workers ...
+        10,000/52,326 (48s)
+        20,000/52,326 (86s)
+        30,000/52,326 (119s)
+        40,000/52,326 (126s)
+        50,000/52,326 (154s)
+        test duoc 52,326 cap
+        dau p<=0.05 tho: 6,395 | dau BH-FDR q=0.05: 0
+BUOC 2: split-sample gate tren 0 cap ...
+        dau ca 2 nua cv90: 0 cap (156s)
+BUOC 3: khong co cap nao — bo qua
+
+============ KET QUA PHEU RESIDUAL Q3/2024 ============
+(doi chieu gia tho:  52,326 -> FDR 3 -> gate 0)
+residual: 52,326 cap -> FDR: 0 -> gate: 0 -> HL band: 0
+
+tong thoi gian: 156s

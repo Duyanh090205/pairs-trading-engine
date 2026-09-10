@@ -1,0 +1,4 @@
+lambda_frozen=100.0
+{'a_bear_of_4': 0, 'crit_a': False, 'crit_b': True, 'jm_bear_profitable': 3, 'comp_halt_profitable': 5, 'crit_c': True, 'n_profitable_23_2511': 22, 'PASS': False}
+sensitivity lambda=31.6: {'a_bear_of_4': 0, 'crit_a': False, 'crit_b': True, 'jm_bear_profitable': 2, 'comp_halt_profitable': 5, 'crit_c': True, 'n_profitable_23_2511': 22, 'PASS': False}
+sensitivity lambda=316.0: {'a_bear_of_4': 0, 'crit_a': False, 'crit_b': True, 'jm_bear_profitable': 8, 'comp_halt_profitable': 5, 'crit_c': False, 'n_profitable_23_2511': 22, 'PASS': False}

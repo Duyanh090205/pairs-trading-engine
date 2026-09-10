@@ -1,0 +1,392 @@
+=== V4 negative-Sharpe deep audit (10 tests) ===
+Combo: entry_z=2.5, hl_max=30.0, hard_sl_z=4.0, z_window=60
+Folds: 39
+
+  cache loaded: 528 tickers (1.0s)
+
+  [v4-discovery] 511 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 01 [2023-01]: pairs=96, gross=$  +9,258, cost=$   2,404, net=$  +6,854 (31s)
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 02 [2023-02]: pairs=107, gross=$  +7,369, cost=$   2,443, net=$  +4,926 (32s)
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 03 [2023-03]: pairs=149, gross=$ -22,159, cost=$   5,662, net=$ -27,821 (27s)
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 507 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 507 tickers (128271 pairs)...
+  [v4-discovery] pairwise tests done: 128271 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 04 [2023-04]: pairs=77, gross=$  +3,129, cost=$   1,335, net=$  +1,795 (26s)
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 508 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 508 tickers (128778 pairs)...
+  [v4-discovery] pairwise tests done: 128778 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 05 [2023-05]: pairs=24, gross=$ +14,388, cost=$     843, net=$ +13,545 (31s)
+  [v4-discovery] 514 formation tickers
+  [v4-discovery] hard screens: 510 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 510 tickers (129795 pairs)...
+  [v4-discovery] pairwise tests done: 129795 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 06 [2023-06]: pairs=122, gross=$  +5,549, cost=$   2,237, net=$  +3,313 (35s)
+  [v4-discovery] 514 formation tickers
+  [v4-discovery] hard screens: 510 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 510 tickers (129795 pairs)...
+  [v4-discovery] pairwise tests done: 129795 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 07 [2023-07]: pairs=123, gross=$  +4,466, cost=$   1,435, net=$  +3,031 (37s)
+  [v4-discovery] 515 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 08 [2023-08]: pairs=7, gross=$ -50,797, cost=$     182, net=$ -50,979 (30s)
+  [v4-discovery] 516 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 09 [2023-09]: pairs=52, gross=$-199,225, cost=$   1,371, net=$-200,595 (31s)
+  [v4-discovery] 517 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 10 [2023-10]: pairs=59, gross=$ -12,052, cost=$   2,118, net=$ -14,171 (33s)
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 510 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 510 tickers (129795 pairs)...
+  [v4-discovery] pairwise tests done: 129795 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 11 [2023-11]: pairs=90, gross=$  +9,485, cost=$   2,549, net=$  +6,936 (32s)
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 12 [2023-12]: pairs=125, gross=$     +71, cost=$   2,933, net=$  -2,861 (36s)
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 13 [2024-01]: pairs=133, gross=$ -27,083, cost=$   4,233, net=$ -31,317 (36s)
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 14 [2024-02]: pairs=65, gross=$  -3,978, cost=$   2,904, net=$  -6,882 (35s)
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 15 [2024-03]: pairs=96, gross=$  -3,380, cost=$   2,395, net=$  -5,775 (36s)
+  [v4-discovery] 519 formation tickers
+  [v4-discovery] hard screens: 512 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 512 tickers (130816 pairs)...
+  [v4-discovery] pairwise tests done: 130816 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 16 [2024-04]: pairs=115, gross=$  -2,819, cost=$   2,893, net=$  -5,712 (36s)
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 513 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 513 tickers (131328 pairs)...
+  [v4-discovery] pairwise tests done: 131328 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 17 [2024-05]: pairs=116, gross=$  +6,970, cost=$   4,073, net=$  +2,897 (35s)
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 514 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 514 tickers (131841 pairs)...
+  [v4-discovery] pairwise tests done: 131841 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 18 [2024-06]: pairs=124, gross=$  -6,369, cost=$   2,309, net=$  -8,679 (33s)
+  [v4-discovery] 520 formation tickers
+  [v4-discovery] hard screens: 514 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 514 tickers (131841 pairs)...
+  [v4-discovery] pairwise tests done: 131841 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 19 [2024-07]: pairs=119, gross=$  -8,322, cost=$   3,930, net=$ -12,252 (33s)
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 515 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 515 tickers (132355 pairs)...
+  [v4-discovery] pairwise tests done: 132355 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 20 [2024-08]: pairs=144, gross=$ +38,665, cost=$   4,416, net=$ +34,248 (32s)
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 21 [2024-09]: pairs=163, gross=$ -49,373, cost=$   3,677, net=$ -53,049 (33s)
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 22 [2024-10]: pairs=162, gross=$  -7,823, cost=$   4,942, net=$ -12,764 (33s)
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 23 [2024-11]: pairs=64, gross=$ +17,283, cost=$   2,876, net=$ +14,408 (32s)
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 24 [2024-12]: pairs=92, gross=$  +5,093, cost=$   1,977, net=$  +3,116 (32s)
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 25 [2025-01]: pairs=187, gross=$ +19,382, cost=$   5,253, net=$ +14,129 (29s)
+  [v4-discovery] 523 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 26 [2025-02]: pairs=91, gross=$ +18,393, cost=$   3,600, net=$ +14,792 (28s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 27 [2025-03]: pairs=136, gross=$ +10,283, cost=$   2,574, net=$  +7,709 (28s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 28 [2025-04]: pairs=103, gross=$ +19,658, cost=$   2,782, net=$ +16,876 (28s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 29 [2025-05]: pairs=72, gross=$  +7,076, cost=$   1,283, net=$  +5,793 (27s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 30 [2025-06]: pairs=86, gross=$  -1,364, cost=$   1,668, net=$  -3,033 (28s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 31 [2025-07]: pairs=79, gross=$ +29,474, cost=$   2,880, net=$ +26,594 (28s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 32 [2025-08]: pairs=104, gross=$-143,320, cost=$   3,068, net=$-146,388 (28s)
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 33 [2025-09]: pairs=71, gross=$  +4,599, cost=$   1,320, net=$  +3,280 (28s)
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 34 [2025-10]: pairs=90, gross=$ +10,843, cost=$   2,373, net=$  +8,470 (29s)
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 35 [2025-11]: pairs=89, gross=$+248,361, cost=$   2,302, net=$+246,059 (28s)
+  [v4-discovery] 527 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 36 [2025-12]: pairs=3, gross=$      +0, cost=$       0, net=$      +0 (27s)
+  [v4-discovery] 527 formation tickers
+  [v4-discovery] hard screens: 523 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 523 tickers (136503 pairs)...
+  [v4-discovery] pairwise tests done: 136503 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 37 [2026-01]: pairs=107, gross=$ +18,009, cost=$   3,839, net=$ +14,170 (28s)
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 524 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 524 tickers (137026 pairs)...
+  [v4-discovery] pairwise tests done: 137026 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 38 [2026-02]: pairs=120, gross=$ -13,447, cost=$   5,713, net=$ -19,160 (28s)
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 524 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 524 tickers (137026 pairs)...
+  [v4-discovery] pairwise tests done: 137026 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 39 [2026-03]: pairs=141, gross=$    -259, cost=$   1,670, net=$  -1,929 (29s)
+
+Collected: 1495 trades across 39 folds (1206s)
+
+######################################################################
+# STEP 1 — Does the signal have ANY edge?
+######################################################################
+
+--- T1: Gross PnL per trade (edge BEFORE costs) ---
+  Total trades:        1495
+  Mean gross PnL:      $    -29.41
+  Median gross PnL:    $    +18.29
+  Sum gross PnL:       $     -43,965
+  → T1 verdict: NO EDGE — signal wrong direction or noise
+
+--- T2: Cost drag ---
+  Sum gross PnL:  $     -43,965
+  Sum costs:      $     106,464
+  Sum net PnL:    $    -150,429
+  Mean trade gross:  $  -29.41
+  Mean trade cost:   $   71.21
+  → T2 verdict: gross NEGATIVE; cost is not the primary problem
+
+
+--- T7: Hit rate (% trades profitable) ---
+  Hit rate (gross PnL > 0): 51.4%
+  Hit rate (net PnL > 0):   47.0%
+  Stat-arb literature: 50-60% expected. <45% = signal probably wrong direction.
+  → T7 verdict: IN LIT RANGE (50-60%)
+
+######################################################################
+# T1 negative — running both STEP 2 (exit logic) and STEP 3 (signal/factor)
+######################################################################
+
+--- T3: MFE vs MAE per trade ---
+  Median MFE: $ +293.97  (best unrealized profit)
+  Median MAE: $ -236.60  (worst unrealized loss)
+  Peak profit > peak loss: 767 (51.3%)
+  Peak loss > peak profit: 687 (46.0%)
+  → T3 verdict: SIGNAL OK at trade level
+
+--- T4: P&L by exit reason ---
+                n  mean_gross  mean_net    sum_net  median_duration
+exit_reason                                                        
+hard_sl       126     -936.80  -1000.16 -126020.28              1.0
+open_at_eom  1217     -392.35   -464.66 -565491.51             12.0
+zero_cross    152     3628.69   3559.76  541082.91              8.0
+
+--- T6: Time-to-revert (closed via zero_cross) ---
+  N zero_cross trades: 152
+  Median duration: 8.0 days
+  Mean duration:   8.1 days
+  Median entry |Z|: 2.76
+  Theoretical max: 1.44 × 2.5 × 30.0 = 108 days
+  Closed (zero_cross) mean gross: $+3628.69
+  Open at EOM mean gross:        $ -392.35
+
+######################################################################
+# STEP 3 — Why no signal edge? (T8, T9, T10)
+######################################################################
+
+--- T8: Pair persistence across folds ---
+  Unique pairs across all folds: 2978
+  Distribution of fold-occurrences per pair:
+    appeared in  1 fold(s): 2293 pairs ( 77.0%) ######################################
+    appeared in  2 fold(s):  535 pairs ( 18.0%) ########
+    appeared in  3 fold(s):  100 pairs (  3.4%) #
+    appeared in  4 fold(s):   29 pairs (  1.0%) 
+    appeared in  5 fold(s):   13 pairs (  0.4%) 
+    appeared in  6 fold(s):    4 pairs (  0.1%) 
+    appeared in  7 fold(s):    1 pairs (  0.0%) 
+    appeared in  8 fold(s):    1 pairs (  0.0%) 
+    appeared in 10 fold(s):    2 pairs (  0.1%) 
+  → T8 verdict: COINTEGRATION UNSTABLE — most pairs appear in only 1 fold (regime-dependent)
+
+--- T9: Post-hoc Johansen on TRADING window ---
+  N pairs tested:                3903
+  Still cointegrated (p<0.05):   968 (24.8%)
+  Lost cointegration (p≥0.05):   2935 (75.2%)
+  NOTE: trading window is ~20 daily bars; chi2(8) p-values are noisy at this length.
+  → T9 verdict: Most pairs LOST cointegration during trading — explains drift
+
+--- T10: Market-beta leak (regress portfolio_ret ~ market_ret) ---
+  N daily observations: 765
+  Alpha (intercept):    -0.000216   (t=-0.42)
+  Beta on market:       +0.0513    (t=+0.92)
+  R²:                   0.0011
+  → T10 verdict: No significant market exposure
+
+######################################################################
+# STEP 4 — T5 Regime split (CONTEXT ONLY — not for config selection)
+######################################################################
+
+  Top 5 folds:
+ fold trading_month     gross_pnl        cost       net_pnl  bps_of_capital  n_pairs
+   35       2025-11 248361.002095 2301.807248 246059.194846     2460.591948       89
+   20       2024-08  38664.560222 4416.208767  34248.351455      342.483515      144
+   31       2025-07  29474.204220 2880.078451  26594.125769      265.941258       79
+   28       2025-04  19657.933689 2781.692695  16876.240994      168.762410      103
+   26       2025-02  18392.597108 3600.328358  14792.268750      147.922688       91
+
+  Bottom 5 folds:
+ fold trading_month      gross_pnl        cost        net_pnl  bps_of_capital  n_pairs
+   13       2024-01  -27083.439382 4233.486378  -31316.925760     -313.169258      133
+    8       2023-08  -50797.123571  182.182540  -50979.306111     -509.793061        7
+   21       2024-09  -49372.507484 3676.704758  -53049.212242     -530.492122      163
+   32       2025-08 -143320.313510 3067.887119 -146388.200629    -1463.882006      104
+    9       2023-09 -199224.531839 1370.947272 -200595.479111    -2005.954791       52
+
+  Folds positive: 21 / 39
+  Sum across all: $    -150,429
+
+  ⚠️ Reminder: do NOT tune parameters per regime — that's cherry-picking.
+     Use this section only to describe the failure mode in the report.

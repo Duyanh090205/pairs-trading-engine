@@ -1,0 +1,8 @@
+V4 soft-stop sweep decision
+===========================
+Verdict: ALL_NEGATIVE
+Action:  All 3 OOS Sharpe < 0 -> SHIP NEGATIVE result. Soft stop does NOT help.
+
+  soft_stop=7: OOS Sharpe=-1.540
+  soft_stop=10: OOS Sharpe=-1.327
+  soft_stop=14: OOS Sharpe=-0.373

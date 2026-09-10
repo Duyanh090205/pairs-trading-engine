@@ -1,0 +1,35 @@
+universe 100 ma | 5-min 9394 bar | 1-min 47580 bar
+23 cua so tuan (formation) -> trade tuan ke tiep
+[tuan 01] coint  265 cap | twin  89 | trades luy ke: a=537, b=221, c_z=189, c_ev=353 (10s)
+[tuan 02] coint  138 cap | twin  89 | trades luy ke: a=793, b=392, c_z=341, c_ev=538 (13s)
+[tuan 03] coint  138 cap | twin  82 | trades luy ke: a=1040, b=748, c_z=534, c_ev=1136 (16s)
+[tuan 04] coint  419 cap | twin  82 | trades luy ke: a=1852, b=939, c_z=738, c_ev=1508 (20s)
+[tuan 05] coint  282 cap | twin  84 | trades luy ke: a=2457, b=1043, c_z=919, c_ev=1685 (23s)
+[tuan 06] coint  197 cap | twin  87 | trades luy ke: a=2800, b=1314, c_z=1126, c_ev=2123 (26s)
+[tuan 07] coint  108 cap | twin  84 | trades luy ke: a=2984, b=1556, c_z=1291, c_ev=2688 (29s)
+[tuan 08] coint  108 cap | twin  88 | trades luy ke: a=3182, b=1831, c_z=1493, c_ev=3294 (32s)
+[tuan 09] coint  175 cap | twin  90 | trades luy ke: a=3399, b=1924, c_z=1615, c_ev=3471 (35s)
+[tuan 10] coint  198 cap | twin  90 | trades luy ke: a=3707, b=1958, c_z=1778, c_ev=3555 (38s)
+[tuan 11] coint  230 cap | twin  90 | trades luy ke: a=4248, b=2068, c_z=2006, c_ev=3725 (41s)
+[tuan 12] coint  130 cap | twin  88 | trades luy ke: a=4518, b=3018, c_z=2252, c_ev=5746 (44s)
+[tuan 13] coint   98 cap | twin  92 | trades luy ke: a=4699, b=3169, c_z=2388, c_ev=5972 (47s)
+[tuan 14] coint  534 cap | twin  92 | trades luy ke: a=5333, b=3181, c_z=2513, c_ev=5983 (50s)
+[tuan 15] coint  175 cap | twin  90 | trades luy ke: a=5641, b=3301, c_z=2644, c_ev=6136 (53s)
+[tuan 16] coint  739 cap | twin  84 | trades luy ke: a=7451, b=3383, c_z=2845, c_ev=6249 (57s)
+[tuan 17] coint  337 cap | twin  89 | trades luy ke: a=8213, b=3499, c_z=3029, c_ev=6448 (60s)
+[tuan 18] coint  206 cap | twin  86 | trades luy ke: a=8492, b=3554, c_z=3163, c_ev=6511 (63s)
+[tuan 19] coint  509 cap | twin  88 | trades luy ke: a=9347, b=3693, c_z=3321, c_ev=6689 (67s)
+[tuan 20] coint  268 cap | twin  91 | trades luy ke: a=9919, b=3925, c_z=3526, c_ev=7121 (71s)
+[tuan 21] coint  176 cap | twin  85 | trades luy ke: a=10287, b=4112, c_z=3702, c_ev=7475 (75s)
+[tuan 22] coint  161 cap | twin  83 | trades luy ke: a=10563, b=4276, c_z=3871, c_ev=7780 (79s)
+[tuan 23] coint  139 cap | twin  86 | trades luy ke: a=10905, b=4432, c_z=4052, c_ev=8003 (83s)
+
+===== DO BEN CUC BO — bps GOP moi trade o tuan KE TIEP =====
+                       nhanh  N trade  gop bp/trade  t-stat   hit%  phi median   NET bp
+   (a) coint-tuan -> z-score   10,905      +2.83±4.58    +0.6  66.0%      14.3bp    -11.5
+   (c) control cung luat (a)    4,052     -12.59±5.25    -2.4  55.3%       9.4bp    -22.0
+      (b) twin-corr -> event    4,432      -0.60±1.08    -0.6  51.3%      12.6bp    -13.2
+   (c) control cung luat (b)    8,003      -1.12±1.06    -1.1  50.9%       9.2bp    -10.3
+
+(a) chon 5,730 luot cap coint / 23 tuan | (b) 2,009 luot twin
+tong: 83s

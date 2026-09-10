@@ -1,0 +1,14 @@
+V4 daily pipeline | entry_z=2.0, z_window=60, hard_sl_z=4.0, hl=[5.0, 30.0]
+Cost model: DYNAMIC (Week 5)
+Folds: 39 | out_dir=d:\Quant Finance\Quant Program\Week 6\results\v4\dynamic_cost_all
+Loading daily cache from daily_phase3/ ...
+  loaded 528 tickers in 1.0s
+Loading Week 5 spread cache + kappa map...
+  loaded 544223 daily spread rows, 526 tickers in kappa map (0.2s)
+
+  Fold 01 [2023-01]: slicing daily cache for formation 2022-01-01 .. 2022-12-31
+  Fold 01 [2023-01]: daily formation: 511 tickers
+  [v4-discovery] 511 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...

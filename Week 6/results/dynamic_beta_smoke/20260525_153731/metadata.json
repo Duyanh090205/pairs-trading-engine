@@ -1,0 +1,26 @@
+{
+  "timestamp": "20260525_153731",
+  "git_sha": "59fb8f8dcfba7e4f43335fae920b8a5d5d4a8bd3",
+  "folds": [
+    4,
+    5,
+    18,
+    22,
+    28,
+    32
+  ],
+  "arms": [
+    "A0_static_v4",
+    "A1_short_ols60",
+    "B1_kalman_hl10",
+    "B1c_clamp_gate",
+    "B1g_all_guards"
+  ],
+  "use_dynamic_cost": true,
+  "entry_z": 2.0,
+  "z_window": 60,
+  "hard_sl_z": 4.0,
+  "hl_min": 5.0,
+  "hl_max": 30.0,
+  "total_capital": 1000000.0
+}

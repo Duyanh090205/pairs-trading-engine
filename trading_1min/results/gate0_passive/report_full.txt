@@ -1,0 +1,68 @@
+===== GATE 0 PASSIVE EXEC (full) — spec gate0_passive_exec_spec.md =====
+universe 100 | ETF trong universe: GLD, IWM, QQQ, SPY, TLT, XLI, XLK, XLP, XLV, XLY, XOP
+leaders (full): GLD, IWM, QQQ, SPY, TLT, XLI, XLK, XLP, XLV, XLY, XOP | ky: 2024-01-02 -> 2024-12-31
+[events]  GLD: raw   970 -> sau refractory   816
+[events]  IWM: raw   647 -> sau refractory   566
+[events]  QQQ: raw   823 -> sau refractory   721
+[events]  SPY: raw   892 -> sau refractory   780
+[events]  TLT: raw  1026 -> sau refractory   899
+[events]  XLI: raw   696 -> sau refractory   615
+[events]  XLK: raw   738 -> sau refractory   643
+[events]  XLP: raw   524 -> sau refractory   485
+[events]  XLV: raw   577 -> sau refractory   524
+[events]  XLY: raw   748 -> sau refractory   662
+[events]  XOP: raw   566 -> sau refractory   510
+[events] dedup: 4,346 phut tin hieu / 252 phien (~17.2/phien)
+[z-bucket] [3,4): 3278  [4,6): 868  [6+): 200
+  ... 10 follower xong (19s)
+  ... 20 follower xong (35s)
+  ... 30 follower xong (51s)
+  ... 40 follower xong (66s)
+  ... 50 follower xong (84s)
+  ... 60 follower xong (103s)
+  ... 70 follower xong (121s)
+  ... 80 follower xong (138s)
+  ... 89 follower xong (154s)
+[followers] 89 ma co du lieu | skip no_bar trung binh 53.2/ma | invalid L1 trung binh 0.0%
+
+[pooled] equal-weight follower — f | IS (bp) | cost_eff (bp):
+  V1 bid     through: f 49.7% | IS  +2.89 | cost_eff  2.16
+  V1 bid     touch  : f 53.9% | IS  +2.30 | cost_eff  1.92
+  V2 mid-1/4 through: f 63.3% | IS  +3.68 | cost_eff  2.84
+  V2 mid-1/4 touch  : f 68.4% | IS  +3.10 | cost_eff  2.57
+  V3 mid     through: f 80.3% | IS  +4.45 | cost_eff  3.84
+  V3 mid     touch  : f 86.7% | IS  +3.78 | cost_eff  3.46
+
+[gate] follower dau (cost<=1.5bp, f>=25%, >=200 att):
+  V1 bid    : through   1 | touch   6
+  V2 mid-1/4: through   0 | touch   0
+  V3 mid    : through   0 | touch   0
+[gate] bien the chung (max through): V1 bid
+
+[adverse] drift 15' sau quyet dinh (V1 through, pooled): filled -5.02bp (n=189269) | unfilled +5.15bp (n=192075)
+[adverse] markout sau-KHOP (Huang-Stoll): 1': -1.42bp | 5': -1.42bp | 15': -1.50bp
+[adverse] half-spread tai phut tin hieu 3.80bp vs control 3.71bp
+[control] through: f 48.7% | IS  +2.65bp (vs signal IS  +2.89bp)
+[control] touch  : f 53.0% | IS  +2.09bp (vs signal IS  +2.30bp)
+[intensity] (V1 through) bucket: f | IS | n:
+  z [3,4) : f 48.7% | IS  +2.69bp | n 287908
+  z [4,6) : f 51.8% | IS  +2.94bp | n 76445
+  z [6+)  : f 55.5% | IS  +2.97bp | n 17704
+
+[sensitivity] (V1 through) f | IS | cost_eff:
+  base    : f 49.7% | IS  +2.89 | cost  2.16
+  W=1     : f 36.8% | IS  +4.39 | cost  2.51
+  W=5     : f 65.0% | IS  +1.35 | cost  1.39
+  h*=5    : f 49.7% | IS  +2.74 | cost  2.08
+  h*=30   : f 49.7% | IS  +2.93 | cost  2.18
+  fade    : f 52.5% | IS  +3.03 | cost  2.28
+  H1/2024 : f 48.2% | IS  +2.96 | cost  2.17
+  H2/2024 : f 51.0% | IS  +2.81 | cost  2.14
+  k=2.5   : f 48.3% | IS  +2.74 | cost  2.07 (9,543 su kien)
+  k=4.0   : f 52.6% | IS  +3.35 | cost  2.44 (1,133 su kien)
+
+**********************************************************************
+GATE 0: bien the V1 (bid) | dau THROUGH: 1 | dau TOUCH: 6 | can 30
+PHAN QUYET: ROT GATE 0 -> DONG track lead-lag. Bao cao trung thuc. Khong thuong luong.
+**********************************************************************
+tong: 388s

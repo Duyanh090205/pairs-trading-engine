@@ -1,0 +1,650 @@
+V4 daily pipeline | entry_z=2.0, z_window=60, hard_sl_z=4.0, hl=[5.0, 30.0]
+Cost model: DYNAMIC (Week 5)
+Carry-forward (E2): ON (gate p<0.05)
+Folds: 39 | out_dir=results\v4\carry_forward
+Loading daily cache from daily_phase3/ ...
+  loaded 528 tickers in 1.0s
+Loading Week 5 spread cache + kappa map...
+  loaded 544223 daily spread rows, 526 tickers in kappa map (0.2s)
+
+  Fold 01 [2023-01]: slicing daily cache for formation 2022-01-01 .. 2022-12-31
+  Fold 01 [2023-01]: daily formation: 511 tickers
+  [v4-discovery] 511 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 189 -> 175 (14 dropped)
+  Fold 01 [2023-01]: discovery: 175 pairs after beta>0 | cum_var=0.623
+  Fold 01 [2023-01]: slicing daily cache for trading 2023-01-01 .. 2023-01-31
+  Fold 01 [2023-01]: daily trading: 512 tickers
+  Fold 01 [2023-01]: trading residual: 20 bars x 506 tickers
+  Fold 01 [2023-01]: complete in 27.8s | n_trades=54, sharpe=+2.170, total_return=+0.0074, exits z/sl/open=6/1/47
+  Fold 01: carry-forward: 47 candidates -> 42 pass (5 cut); 42 EOM cost refunds applied
+  Fold 02 [2023-02]: slicing daily cache for formation 2022-02-01 .. 2023-01-31
+  Fold 02 [2023-02]: daily formation: 512 tickers
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 190 -> 173 (17 dropped)
+  Fold 02 [2023-02]: discovery: 173 pairs after beta>0 | cum_var=0.614
+  Fold 02 [2023-02]: slicing daily cache for trading 2023-02-01 .. 2023-02-28
+  Fold 02 [2023-02]: daily trading: 512 tickers
+  Fold 02 [2023-02]: trading residual: 19 bars x 506 tickers
+  Fold 02 [2023-02]: complete in 28.3s | n_trades=103, sharpe=+2.784, total_return=+0.0127, exits z/sl/open=30/5/68
+  Fold 02: carry-forward: 68 candidates -> 48 pass (20 cut); 48 EOM cost refunds applied
+  Fold 03 [2023-03]: slicing daily cache for formation 2022-03-01 .. 2023-02-28
+  Fold 03 [2023-03]: daily formation: 512 tickers
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 212 -> 196 (16 dropped)
+  Fold 03 [2023-03]: discovery: 196 pairs after beta>0 | cum_var=0.615
+  Fold 03 [2023-03]: slicing daily cache for trading 2023-03-01 .. 2023-03-31
+  Fold 03 [2023-03]: daily trading: 512 tickers
+  Fold 03 [2023-03]: trading residual: 23 bars x 506 tickers
+  Fold 03 [2023-03]: complete in 28.2s | n_trades=166, sharpe=-2.998, total_return=-0.0340, exits z/sl/open=35/16/115
+  Fold 03: carry-forward: 115 candidates -> 67 pass (48 cut); 67 EOM cost refunds applied
+  Fold 04 [2023-04]: slicing daily cache for formation 2022-04-01 .. 2023-03-31
+  Fold 04 [2023-04]: daily formation: 512 tickers
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 507 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 507 tickers (128271 pairs)...
+  [v4-discovery] pairwise tests done: 128271 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 159 -> 144 (15 dropped)
+  Fold 04 [2023-04]: discovery: 144 pairs after beta>0 | cum_var=0.616
+  Fold 04 [2023-04]: slicing daily cache for trading 2023-04-01 .. 2023-04-30
+  Fold 04 [2023-04]: daily trading: 512 tickers
+  Fold 04 [2023-04]: trading residual: 19 bars x 507 tickers
+  Fold 04 [2023-04]: complete in 29.3s | n_trades=112, sharpe=+4.063, total_return=+0.0210, exits z/sl/open=46/1/65
+  Fold 04: carry-forward: 65 candidates -> 46 pass (19 cut); 46 EOM cost refunds applied
+  Fold 05 [2023-05]: slicing daily cache for formation 2022-05-01 .. 2023-04-30
+  Fold 05 [2023-05]: daily formation: 512 tickers
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 508 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 508 tickers (128778 pairs)...
+  [v4-discovery] pairwise tests done: 128778 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 160 -> 125 (35 dropped)
+  Fold 05 [2023-05]: discovery: 125 pairs after beta>0 | cum_var=0.612
+  Fold 05 [2023-05]: slicing daily cache for trading 2023-05-01 .. 2023-05-31
+  Fold 05 [2023-05]: daily trading: 514 tickers
+  Fold 05 [2023-05]: trading residual: 22 bars x 508 tickers
+  Fold 05 [2023-05]: complete in 27.5s | n_trades=67, sharpe=-1.491, total_return=-0.0081, exits z/sl/open=28/2/37
+  Fold 05: carry-forward: 37 candidates -> 14 pass (23 cut); 14 EOM cost refunds applied
+  Fold 06 [2023-06]: slicing daily cache for formation 2022-06-01 .. 2023-05-31
+  Fold 06 [2023-06]: daily formation: 514 tickers
+  [v4-discovery] 514 formation tickers
+  [v4-discovery] hard screens: 510 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 510 tickers (129795 pairs)...
+  [v4-discovery] pairwise tests done: 129795 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 193 -> 170 (23 dropped)
+  Fold 06 [2023-06]: discovery: 170 pairs after beta>0 | cum_var=0.596
+  Fold 06 [2023-06]: slicing daily cache for trading 2023-06-01 .. 2023-06-30
+  Fold 06 [2023-06]: daily trading: 514 tickers
+  Fold 06 [2023-06]: trading residual: 21 bars x 510 tickers
+  Fold 06 [2023-06]: complete in 28.5s | n_trades=82, sharpe=-1.020, total_return=-0.0046, exits z/sl/open=20/1/61
+  Fold 06: carry-forward: 61 candidates -> 59 pass (2 cut); 59 EOM cost refunds applied
+  Fold 07 [2023-07]: slicing daily cache for formation 2022-07-01 .. 2023-06-30
+  Fold 07 [2023-07]: daily formation: 514 tickers
+  [v4-discovery] 514 formation tickers
+  [v4-discovery] hard screens: 510 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 510 tickers (129795 pairs)...
+  [v4-discovery] pairwise tests done: 129795 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 192 -> 165 (27 dropped)
+  Fold 07 [2023-07]: discovery: 165 pairs after beta>0 | cum_var=0.595
+  Fold 07 [2023-07]: slicing daily cache for trading 2023-07-01 .. 2023-07-31
+  Fold 07 [2023-07]: daily trading: 514 tickers
+  Fold 07 [2023-07]: trading residual: 20 bars x 509 tickers
+  Fold 07 [2023-07]: complete in 28.0s | n_trades=114, sharpe=+1.655, total_return=+0.0058, exits z/sl/open=37/3/74
+  Fold 07: carry-forward: 74 candidates -> 39 pass (35 cut); 39 EOM cost refunds applied
+  Fold 08 [2023-08]: slicing daily cache for formation 2022-08-01 .. 2023-07-31
+  Fold 08 [2023-08]: daily formation: 515 tickers
+  [v4-discovery] 515 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 91 -> 64 (27 dropped)
+  Fold 08 [2023-08]: discovery: 64 pairs after beta>0 | cum_var=0.491
+  Fold 08 [2023-08]: slicing daily cache for trading 2023-08-01 .. 2023-08-31
+  Fold 08 [2023-08]: daily trading: 515 tickers
+  Fold 08 [2023-08]: trading residual: 23 bars x 509 tickers
+  Fold 08 [2023-08]: complete in 27.6s | n_trades=48, sharpe=-4.218, total_return=-0.0090, exits z/sl/open=24/0/24
+  Fold 08: carry-forward: 24 candidates -> 12 pass (12 cut); 12 EOM cost refunds applied
+  Fold 09 [2023-09]: slicing daily cache for formation 2022-09-01 .. 2023-08-31
+  Fold 09 [2023-09]: daily formation: 516 tickers
+  [v4-discovery] 516 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 244 -> 136 (108 dropped)
+  Fold 09 [2023-09]: discovery: 136 pairs after beta>0 | cum_var=0.489
+  Fold 09 [2023-09]: slicing daily cache for trading 2023-09-01 .. 2023-09-30
+  Fold 09 [2023-09]: daily trading: 516 tickers
+  Fold 09 [2023-09]: trading residual: 20 bars x 509 tickers
+  Fold 09 [2023-09]: complete in 29.1s | n_trades=38, sharpe=-0.913, total_return=-0.0022, exits z/sl/open=8/0/30
+  Fold 09: carry-forward: 30 candidates -> 25 pass (5 cut); 25 EOM cost refunds applied
+  Fold 10 [2023-10]: slicing daily cache for formation 2022-10-01 .. 2023-09-30
+  Fold 10 [2023-10]: daily formation: 517 tickers
+  [v4-discovery] 517 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 211 -> 162 (49 dropped)
+  Fold 10 [2023-10]: discovery: 162 pairs after beta>0 | cum_var=0.480
+  Fold 10 [2023-10]: slicing daily cache for trading 2023-10-01 .. 2023-10-31
+  Fold 10 [2023-10]: daily trading: 517 tickers
+  Fold 10 [2023-10]: trading residual: 22 bars x 509 tickers
+  Fold 10 [2023-10]: complete in 32.0s | n_trades=78, sharpe=+3.832, total_return=+0.0139, exits z/sl/open=32/1/45
+  Fold 10: carry-forward: 45 candidates -> 35 pass (10 cut); 35 EOM cost refunds applied
+  Fold 11 [2023-11]: slicing daily cache for formation 2022-11-01 .. 2023-10-31
+  Fold 11 [2023-11]: daily formation: 518 tickers
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 510 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 510 tickers (129795 pairs)...
+  [v4-discovery] pairwise tests done: 129795 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 205 -> 181 (24 dropped)
+  Fold 11 [2023-11]: discovery: 181 pairs after beta>0 | cum_var=0.468
+  Fold 11 [2023-11]: slicing daily cache for trading 2023-11-01 .. 2023-11-30
+  Fold 11 [2023-11]: daily trading: 517 tickers
+  Fold 11 [2023-11]: trading residual: 21 bars x 510 tickers
+  Fold 11 [2023-11]: complete in 30.9s | n_trades=98, sharpe=-4.033, total_return=-0.0123, exits z/sl/open=23/2/73
+  Fold 11: carry-forward: 73 candidates -> 45 pass (28 cut); 45 EOM cost refunds applied
+  Fold 12 [2023-12]: slicing daily cache for formation 2022-12-01 .. 2023-11-30
+  Fold 12 [2023-12]: daily formation: 518 tickers
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 198 -> 182 (16 dropped)
+  Fold 12 [2023-12]: discovery: 182 pairs after beta>0 | cum_var=0.422
+  Fold 12 [2023-12]: slicing daily cache for trading 2023-12-01 .. 2023-12-31
+  Fold 12 [2023-12]: daily trading: 517 tickers
+  Fold 12 [2023-12]: trading residual: 20 bars x 511 tickers
+  Fold 12 [2023-12]: complete in 31.1s | n_trades=106, sharpe=-4.302, total_return=-0.0174, exits z/sl/open=27/2/77
+  Fold 12: carry-forward: 77 candidates -> 63 pass (14 cut); 63 EOM cost refunds applied
+  Fold 13 [2024-01]: slicing daily cache for formation 2023-01-01 .. 2023-12-31
+  Fold 13 [2024-01]: daily formation: 518 tickers
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 203 -> 187 (16 dropped)
+  Fold 13 [2024-01]: discovery: 187 pairs after beta>0 | cum_var=0.423
+  Fold 13 [2024-01]: slicing daily cache for trading 2024-01-01 .. 2024-01-31
+  Fold 13 [2024-01]: daily trading: 517 tickers
+  Fold 13 [2024-01]: trading residual: 21 bars x 511 tickers
+  Fold 13 [2024-01]: complete in 31.7s | n_trades=141, sharpe=+0.039, total_return=+0.0003, exits z/sl/open=41/6/94
+  Fold 13: carry-forward: 94 candidates -> 70 pass (24 cut); 70 EOM cost refunds applied
+  Fold 14 [2024-02]: slicing daily cache for formation 2023-02-01 .. 2024-01-31
+  Fold 14 [2024-02]: daily formation: 518 tickers
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 222 -> 208 (14 dropped)
+  Fold 14 [2024-02]: discovery: 208 pairs after beta>0 | cum_var=0.411
+  Fold 14 [2024-02]: slicing daily cache for trading 2024-02-01 .. 2024-02-29
+  Fold 14 [2024-02]: daily trading: 517 tickers
+  Fold 14 [2024-02]: trading residual: 20 bars x 511 tickers
+  Fold 14 [2024-02]: complete in 32.2s | n_trades=133, sharpe=-0.395, total_return=-0.0026, exits z/sl/open=48/7/78
+  Fold 14: carry-forward: 78 candidates -> 45 pass (33 cut); 45 EOM cost refunds applied
+  Fold 15 [2024-03]: slicing daily cache for formation 2023-03-01 .. 2024-02-29
+  Fold 15 [2024-03]: daily formation: 518 tickers
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 194 -> 146 (48 dropped)
+  Fold 15 [2024-03]: discovery: 146 pairs after beta>0 | cum_var=0.399
+  Fold 15 [2024-03]: slicing daily cache for trading 2024-03-01 .. 2024-03-31
+  Fold 15 [2024-03]: daily trading: 518 tickers
+  Fold 15 [2024-03]: trading residual: 19 bars x 511 tickers
+  Fold 15 [2024-03]: complete in 32.0s | n_trades=102, sharpe=+1.680, total_return=+0.0074, exits z/sl/open=24/1/77
+  Fold 15: carry-forward: 77 candidates -> 45 pass (32 cut); 45 EOM cost refunds applied
+  Fold 16 [2024-04]: slicing daily cache for formation 2023-04-01 .. 2024-03-31
+  Fold 16 [2024-04]: daily formation: 519 tickers
+  [v4-discovery] 519 formation tickers
+  [v4-discovery] hard screens: 512 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 512 tickers (130816 pairs)...
+  [v4-discovery] pairwise tests done: 130816 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 172 -> 147 (25 dropped)
+  Fold 16 [2024-04]: discovery: 147 pairs after beta>0 | cum_var=0.372
+  Fold 16 [2024-04]: slicing daily cache for trading 2024-04-01 .. 2024-04-30
+  Fold 16 [2024-04]: daily trading: 520 tickers
+  Fold 16 [2024-04]: trading residual: 22 bars x 512 tickers
+  Fold 16 [2024-04]: complete in 33.6s | n_trades=110, sharpe=-1.572, total_return=-0.0114, exits z/sl/open=28/4/78
+  Fold 16: carry-forward: 78 candidates -> 55 pass (23 cut); 55 EOM cost refunds applied
+  Fold 17 [2024-05]: slicing daily cache for formation 2023-05-01 .. 2024-04-30
+  Fold 17 [2024-05]: daily formation: 521 tickers
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 513 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 513 tickers (131328 pairs)...
+  [v4-discovery] pairwise tests done: 131328 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 162 -> 149 (13 dropped)
+  Fold 17 [2024-05]: discovery: 149 pairs after beta>0 | cum_var=0.366
+  Fold 17 [2024-05]: slicing daily cache for trading 2024-05-01 .. 2024-05-31
+  Fold 17 [2024-05]: daily trading: 520 tickers
+  Fold 17 [2024-05]: trading residual: 22 bars x 513 tickers
+  Fold 17 [2024-05]: complete in 32.3s | n_trades=140, sharpe=-3.048, total_return=-0.0199, exits z/sl/open=35/6/99
+  Fold 17: carry-forward: 99 candidates -> 46 pass (53 cut); 46 EOM cost refunds applied
+  Fold 18 [2024-06]: slicing daily cache for formation 2023-06-01 .. 2024-05-31
+  Fold 18 [2024-06]: daily formation: 521 tickers
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 514 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 514 tickers (131841 pairs)...
+  [v4-discovery] pairwise tests done: 131841 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 209 -> 195 (14 dropped)
+  Fold 18 [2024-06]: discovery: 195 pairs after beta>0 | cum_var=0.356
+  Fold 18 [2024-06]: slicing daily cache for trading 2024-06-01 .. 2024-06-30
+  Fold 18 [2024-06]: daily trading: 520 tickers
+  Fold 18 [2024-06]: trading residual: 19 bars x 514 tickers
+  Fold 18 [2024-06]: complete in 33.4s | n_trades=109, sharpe=-5.970, total_return=-0.0314, exits z/sl/open=19/3/87
+  Fold 18: carry-forward: 87 candidates -> 63 pass (24 cut); 63 EOM cost refunds applied
+  Fold 19 [2024-07]: slicing daily cache for formation 2023-07-01 .. 2024-06-30
+  Fold 19 [2024-07]: daily formation: 520 tickers
+  [v4-discovery] 520 formation tickers
+  [v4-discovery] hard screens: 514 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 514 tickers (131841 pairs)...
+  [v4-discovery] pairwise tests done: 131841 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 201 -> 180 (21 dropped)
+  Fold 19 [2024-07]: discovery: 180 pairs after beta>0 | cum_var=0.514
+  Fold 19 [2024-07]: slicing daily cache for trading 2024-07-01 .. 2024-07-31
+  Fold 19 [2024-07]: daily trading: 521 tickers
+  Fold 19 [2024-07]: trading residual: 22 bars x 514 tickers
+  Fold 19 [2024-07]: complete in 32.8s | n_trades=160, sharpe=-4.322, total_return=-0.0262, exits z/sl/open=49/12/99
+  Fold 19: carry-forward: 99 candidates -> 60 pass (39 cut); 60 EOM cost refunds applied
+  Fold 20 [2024-08]: slicing daily cache for formation 2023-08-01 .. 2024-07-31
+  Fold 20 [2024-08]: daily formation: 521 tickers
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 515 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 515 tickers (132355 pairs)...
+  [v4-discovery] pairwise tests done: 132355 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 177 -> 158 (19 dropped)
+  Fold 20 [2024-08]: discovery: 158 pairs after beta>0 | cum_var=0.536
+  Fold 20 [2024-08]: slicing daily cache for trading 2024-08-01 .. 2024-08-31
+  Fold 20 [2024-08]: daily trading: 521 tickers
+  Fold 20 [2024-08]: trading residual: 22 bars x 515 tickers
+  Fold 20 [2024-08]: complete in 33.0s | n_trades=158, sharpe=-1.173, total_return=-0.0099, exits z/sl/open=39/7/112
+  Fold 20: carry-forward: 112 candidates -> 77 pass (35 cut); 77 EOM cost refunds applied
+  Fold 21 [2024-09]: slicing daily cache for formation 2023-09-01 .. 2024-08-31
+  Fold 21 [2024-09]: daily formation: 521 tickers
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 211 -> 197 (14 dropped)
+  Fold 21 [2024-09]: discovery: 197 pairs after beta>0 | cum_var=0.537
+  Fold 21 [2024-09]: slicing daily cache for trading 2024-09-01 .. 2024-09-30
+  Fold 21 [2024-09]: daily trading: 521 tickers
+  Fold 21 [2024-09]: trading residual: 20 bars x 517 tickers
+  Fold 21 [2024-09]: complete in 34.7s | n_trades=160, sharpe=+1.876, total_return=+0.0108, exits z/sl/open=48/5/107
+  Fold 21: carry-forward: 107 candidates -> 86 pass (21 cut); 86 EOM cost refunds applied
+  Fold 22 [2024-10]: slicing daily cache for formation 2023-10-01 .. 2024-09-30
+  Fold 22 [2024-10]: daily formation: 521 tickers
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 212 -> 203 (9 dropped)
+  Fold 22 [2024-10]: discovery: 203 pairs after beta>0 | cum_var=0.501
+  Fold 22 [2024-10]: slicing daily cache for trading 2024-10-01 .. 2024-10-31
+  Fold 22 [2024-10]: daily trading: 522 tickers
+  Fold 22 [2024-10]: trading residual: 23 bars x 517 tickers
+  Fold 22 [2024-10]: complete in 41.0s | n_trades=208, sharpe=-2.688, total_return=-0.0180, exits z/sl/open=68/6/134
+  Fold 22: carry-forward: 134 candidates -> 70 pass (64 cut); 70 EOM cost refunds applied
+  Fold 23 [2024-11]: slicing daily cache for formation 2023-11-01 .. 2024-10-31
+  Fold 23 [2024-11]: daily formation: 522 tickers
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 150 -> 137 (13 dropped)
+  Fold 23 [2024-11]: discovery: 137 pairs after beta>0 | cum_var=0.475
+  Fold 23 [2024-11]: slicing daily cache for trading 2024-11-01 .. 2024-11-30
+  Fold 23 [2024-11]: daily trading: 522 tickers
+  Fold 23 [2024-11]: trading residual: 20 bars x 517 tickers
+  Fold 23 [2024-11]: complete in 29.1s | n_trades=133, sharpe=-3.372, total_return=-0.0471, exits z/sl/open=28/6/99
+  Fold 23: carry-forward: 99 candidates -> 47 pass (52 cut); 47 EOM cost refunds applied
+  Fold 24 [2024-12]: slicing daily cache for formation 2023-12-01 .. 2024-11-30
+  Fold 24 [2024-12]: daily formation: 522 tickers
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 126 -> 116 (10 dropped)
+  Fold 24 [2024-12]: discovery: 116 pairs after beta>0 | cum_var=0.466
+  Fold 24 [2024-12]: slicing daily cache for trading 2024-12-01 .. 2024-12-31
+  Fold 24 [2024-12]: daily trading: 522 tickers
+  Fold 24 [2024-12]: trading residual: 21 bars x 517 tickers
+  Fold 24 [2024-12]: complete in 29.4s | n_trades=100, sharpe=-2.900, total_return=-0.0203, exits z/sl/open=18/3/79
+  Fold 24: carry-forward: 79 candidates -> 53 pass (26 cut); 53 EOM cost refunds applied
+  Fold 25 [2025-01]: slicing daily cache for formation 2024-01-01 .. 2024-12-31
+  Fold 25 [2025-01]: daily formation: 522 tickers
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 201 -> 195 (6 dropped)
+  Fold 25 [2025-01]: discovery: 195 pairs after beta>0 | cum_var=0.440
+  Fold 25 [2025-01]: slicing daily cache for trading 2025-01-01 .. 2025-01-31
+  Fold 25 [2025-01]: daily trading: 523 tickers
+  Fold 25 [2025-01]: trading residual: 20 bars x 517 tickers
+  Fold 25 [2025-01]: complete in 29.7s | n_trades=166, sharpe=+2.144, total_return=+0.0190, exits z/sl/open=40/3/123
+  Fold 25: carry-forward: 123 candidates -> 86 pass (37 cut); 86 EOM cost refunds applied
+  Fold 26 [2025-02]: slicing daily cache for formation 2024-02-01 .. 2025-01-31
+  Fold 26 [2025-02]: daily formation: 523 tickers
+  [v4-discovery] 523 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 202 -> 181 (21 dropped)
+  Fold 26 [2025-02]: discovery: 181 pairs after beta>0 | cum_var=0.435
+  Fold 26 [2025-02]: slicing daily cache for trading 2025-02-01 .. 2025-02-28
+  Fold 26 [2025-02]: daily trading: 524 tickers
+  Fold 26 [2025-02]: trading residual: 19 bars x 517 tickers
+  Fold 26 [2025-02]: complete in 28.6s | n_trades=165, sharpe=+7.247, total_return=+0.0424, exits z/sl/open=67/9/89
+  Fold 26: carry-forward: 89 candidates -> 45 pass (44 cut); 45 EOM cost refunds applied
+  Fold 27 [2025-03]: slicing daily cache for formation 2024-03-01 .. 2025-02-28
+  Fold 27 [2025-03]: daily formation: 524 tickers
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 191 -> 187 (4 dropped)
+  Fold 27 [2025-03]: discovery: 187 pairs after beta>0 | cum_var=0.458
+  Fold 27 [2025-03]: slicing daily cache for trading 2025-03-01 .. 2025-03-31
+  Fold 27 [2025-03]: daily trading: 524 tickers
+  Fold 27 [2025-03]: trading residual: 21 bars x 520 tickers
+  Fold 27 [2025-03]: complete in 29.3s | n_trades=120, sharpe=+0.324, total_return=+0.0014, exits z/sl/open=29/1/90
+  Fold 27: carry-forward: 90 candidates -> 67 pass (23 cut); 67 EOM cost refunds applied
+  Fold 28 [2025-04]: slicing daily cache for formation 2024-04-01 .. 2025-03-31
+  Fold 28 [2025-04]: daily formation: 524 tickers
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 197 -> 149 (48 dropped)
+  Fold 28 [2025-04]: discovery: 149 pairs after beta>0 | cum_var=0.455
+  Fold 28 [2025-04]: slicing daily cache for trading 2025-04-01 .. 2025-04-30
+  Fold 28 [2025-04]: daily trading: 524 tickers
+  Fold 28 [2025-04]: trading residual: 21 bars x 520 tickers
+  Fold 28 [2025-04]: complete in 29.5s | n_trades=130, sharpe=+0.742, total_return=+0.0100, exits z/sl/open=43/1/86
+  Fold 28: carry-forward: 86 candidates -> 58 pass (28 cut); 58 EOM cost refunds applied
+  Fold 29 [2025-05]: slicing daily cache for formation 2024-05-01 .. 2025-04-30
+  Fold 29 [2025-05]: daily formation: 524 tickers
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 198 -> 186 (12 dropped)
+  Fold 29 [2025-05]: discovery: 186 pairs after beta>0 | cum_var=0.502
+  Fold 29 [2025-05]: slicing daily cache for trading 2025-05-01 .. 2025-05-31
+  Fold 29 [2025-05]: daily trading: 524 tickers
+  Fold 29 [2025-05]: trading residual: 21 bars x 520 tickers
+  Fold 29 [2025-05]: complete in 29.0s | n_trades=104, sharpe=+2.194, total_return=+0.0147, exits z/sl/open=39/0/65
+  Fold 29: carry-forward: 65 candidates -> 29 pass (36 cut); 29 EOM cost refunds applied
+  Fold 30 [2025-06]: slicing daily cache for formation 2024-06-01 .. 2025-05-31
+  Fold 30 [2025-06]: daily formation: 524 tickers
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 216 -> 208 (8 dropped)
+  Fold 30 [2025-06]: discovery: 208 pairs after beta>0 | cum_var=0.501
+  Fold 30 [2025-06]: slicing daily cache for trading 2025-06-01 .. 2025-06-30
+  Fold 30 [2025-06]: daily trading: 524 tickers
+  Fold 30 [2025-06]: trading residual: 20 bars x 521 tickers
+  Fold 30 [2025-06]: complete in 29.2s | n_trades=74, sharpe=+1.656, total_return=+0.0036, exits z/sl/open=22/2/50
+  Fold 30: carry-forward: 50 candidates -> 37 pass (13 cut); 37 EOM cost refunds applied
+  Fold 31 [2025-07]: slicing daily cache for formation 2024-07-01 .. 2025-06-30
+  Fold 31 [2025-07]: daily formation: 524 tickers
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 212 -> 192 (20 dropped)
+  Fold 31 [2025-07]: discovery: 192 pairs after beta>0 | cum_var=0.483
+  Fold 31 [2025-07]: slicing daily cache for trading 2025-07-01 .. 2025-07-31
+  Fold 31 [2025-07]: daily trading: 524 tickers
+  Fold 31 [2025-07]: trading residual: 22 bars x 521 tickers
+  Fold 31 [2025-07]: complete in 28.8s | n_trades=99, sharpe=-5.293, total_return=-0.0209, exits z/sl/open=26/6/67
+  Fold 31: carry-forward: 67 candidates -> 28 pass (39 cut); 28 EOM cost refunds applied
+  Fold 32 [2025-08]: slicing daily cache for formation 2024-08-01 .. 2025-07-31
+  Fold 32 [2025-08]: daily formation: 524 tickers
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 197 -> 184 (13 dropped)
+  Fold 32 [2025-08]: discovery: 184 pairs after beta>0 | cum_var=0.489
+  Fold 32 [2025-08]: slicing daily cache for trading 2025-08-01 .. 2025-08-31
+  Fold 32 [2025-08]: daily trading: 525 tickers
+  Fold 32 [2025-08]: trading residual: 21 bars x 521 tickers
+  Fold 32 [2025-08]: complete in 29.0s | n_trades=103, sharpe=-0.021, total_return=-0.0001, exits z/sl/open=27/6/70
+  Fold 32: carry-forward: 70 candidates -> 53 pass (17 cut); 53 EOM cost refunds applied
+  Fold 33 [2025-09]: slicing daily cache for formation 2024-09-01 .. 2025-08-31
+  Fold 33 [2025-09]: daily formation: 525 tickers
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 165 -> 156 (9 dropped)
+  Fold 33 [2025-09]: discovery: 156 pairs after beta>0 | cum_var=0.503
+  Fold 33 [2025-09]: slicing daily cache for trading 2025-09-01 .. 2025-09-30
+  Fold 33 [2025-09]: daily trading: 525 tickers
+  Fold 33 [2025-09]: trading residual: 21 bars x 522 tickers
+  Fold 33 [2025-09]: complete in 28.7s | n_trades=98, sharpe=-2.123, total_return=-0.0085, exits z/sl/open=23/3/72
+  Fold 33: carry-forward: 72 candidates -> 59 pass (13 cut); 59 EOM cost refunds applied
+  Fold 34 [2025-10]: slicing daily cache for formation 2024-10-01 .. 2025-09-30
+  Fold 34 [2025-10]: daily formation: 525 tickers
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 168 -> 149 (19 dropped)
+  Fold 34 [2025-10]: discovery: 149 pairs after beta>0 | cum_var=0.488
+  Fold 34 [2025-10]: slicing daily cache for trading 2025-10-01 .. 2025-10-31
+  Fold 34 [2025-10]: daily trading: 525 tickers
+  Fold 34 [2025-10]: trading residual: 23 bars x 522 tickers
+  Fold 34 [2025-10]: complete in 29.4s | n_trades=116, sharpe=-1.719, total_return=-0.0132, exits z/sl/open=35/5/76
+  Fold 34: carry-forward: 76 candidates -> 44 pass (32 cut); 44 EOM cost refunds applied
+  Fold 35 [2025-11]: slicing daily cache for formation 2024-11-01 .. 2025-10-31
+  Fold 35 [2025-11]: daily formation: 525 tickers
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 157 -> 141 (16 dropped)
+  Fold 35 [2025-11]: discovery: 141 pairs after beta>0 | cum_var=0.483
+  Fold 35 [2025-11]: slicing daily cache for trading 2025-11-01 .. 2025-11-30
+  Fold 35 [2025-11]: daily trading: 527 tickers
+  Fold 35 [2025-11]: trading residual: 19 bars x 522 tickers
+  Fold 35 [2025-11]: complete in 28.4s | n_trades=100, sharpe=-1.258, total_return=-0.0069, exits z/sl/open=29/1/70
+  Fold 35: carry-forward: 70 candidates -> 45 pass (25 cut); 45 EOM cost refunds applied
+  Fold 36 [2025-12]: slicing daily cache for formation 2024-12-01 .. 2025-11-30
+  Fold 36 [2025-12]: daily formation: 527 tickers
+  [v4-discovery] 527 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  Fold 36 [2025-12]: discovery: 3 pairs after beta>0 | cum_var=0.496
+  Fold 36 [2025-12]: slicing daily cache for trading 2025-12-01 .. 2025-12-31
+  Fold 36 [2025-12]: daily trading: 527 tickers
+  Fold 36 [2025-12]: trading residual: 22 bars x 522 tickers
+  Fold 36 [2025-12]: complete in 28.6s | n_trades=56, sharpe=+3.767, total_return=+0.0248, exits z/sl/open=25/3/28
+  Fold 36: carry-forward: 28 candidates -> 19 pass (9 cut); 19 EOM cost refunds applied
+  Fold 37 [2026-01]: slicing daily cache for formation 2025-01-01 .. 2025-12-31
+  Fold 37 [2026-01]: daily formation: 527 tickers
+  [v4-discovery] 527 formation tickers
+  [v4-discovery] hard screens: 523 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 523 tickers (136503 pairs)...
+  [v4-discovery] pairwise tests done: 136503 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 232 -> 203 (29 dropped)
+  Fold 37 [2026-01]: discovery: 203 pairs after beta>0 | cum_var=0.496
+  Fold 37 [2026-01]: slicing daily cache for trading 2026-01-01 .. 2026-01-31
+  Fold 37 [2026-01]: daily trading: 528 tickers
+  Fold 37 [2026-01]: trading residual: 20 bars x 523 tickers
+  Fold 37 [2026-01]: complete in 29.9s | n_trades=105, sharpe=-3.014, total_return=-0.0129, exits z/sl/open=27/8/70
+  Fold 37: carry-forward: 70 candidates -> 29 pass (41 cut); 29 EOM cost refunds applied
+  Fold 38 [2026-02]: slicing daily cache for formation 2025-02-01 .. 2026-01-31
+  Fold 38 [2026-02]: daily formation: 528 tickers
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 524 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 524 tickers (137026 pairs)...
+  [v4-discovery] pairwise tests done: 137026 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 210 -> 202 (8 dropped)
+  Fold 38 [2026-02]: discovery: 202 pairs after beta>0 | cum_var=0.482
+  Fold 38 [2026-02]: slicing daily cache for trading 2026-02-01 .. 2026-02-28
+  Fold 38 [2026-02]: daily trading: 528 tickers
+  Fold 38 [2026-02]: trading residual: 19 bars x 524 tickers
+  Fold 38 [2026-02]: complete in 29.7s | n_trades=143, sharpe=-6.306, total_return=-0.0593, exits z/sl/open=22/19/102
+  Fold 38: carry-forward: 102 candidates -> 65 pass (37 cut); 65 EOM cost refunds applied
+  Fold 39 [2026-03]: slicing daily cache for formation 2025-03-01 .. 2026-02-28
+  Fold 39 [2026-03]: daily formation: 528 tickers
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 524 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 524 tickers (137026 pairs)...
+  [v4-discovery] pairwise tests done: 137026 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 168 -> 158 (10 dropped)
+  Fold 39 [2026-03]: discovery: 158 pairs after beta>0 | cum_var=0.462
+  Fold 39 [2026-03]: slicing daily cache for trading 2026-03-01 .. 2026-03-31
+  Fold 39 [2026-03]: daily trading: 528 tickers
+  Fold 39 [2026-03]: trading residual: 14 bars x 524 tickers
+  Fold 39 [2026-03]: complete in 29.4s | n_trades=112, sharpe=-2.451, total_return=-0.0086, exits z/sl/open=15/1/96
+  Fold 39: last fold; carry-forward not applicable
+
+Wrote results\v4\carry_forward\fold_metrics.csv (39 rows)
+ fold trading_month  n_pairs  n_trades    sharpe  total_return  avg_net_bps  n_zero_cross  n_hard_sl
+    1       2023-01      175        54  2.317720      0.007899   123.974237             6          1
+    2       2023-02      173       103  2.955503      0.013316   110.952771            30          5
+    3       2023-03      196       166 -2.900195     -0.033122  -164.810203            35         16
+    4       2023-04      144       112  4.172125      0.021597   146.876517            46          1
+    5       2023-05      125        67 -1.454797     -0.007954   -90.330302            28          2
+    6       2023-06      170        82 -0.851948     -0.003806   -36.012293            20          1
+    7       2023-07      165       114  1.837032      0.006364    42.329879            37          3
+    8       2023-08       64        48 -4.162053     -0.008849  -141.596761            24          0
+    9       2023-09      136        38 -0.755721     -0.001841   -35.611304             8          0
+   10       2023-10      162        78  3.975765      0.014485   131.317524            32          1
+   11       2023-11      181        98 -3.955417     -0.011682   -87.759121            23          2
+   12       2023-12      182       106 -4.075562     -0.016510  -107.661500            27          2
+   13       2024-01      187       141  0.174805      0.001173     5.943310            41          6
+   14       2024-02      208       133 -0.307372     -0.001993   -11.262453            48          7
+   15       2024-03      146       102  1.806929      0.007951    55.412795            24          1
+   16       2024-04      147       110 -1.460656     -0.010645   -72.590914            28          4
+   17       2024-05      149       140 -2.926351     -0.019287  -105.441901            35          6
+   18       2024-06      195       109 -5.754792     -0.030594  -228.108780            19          3
+   19       2024-07      180       160 -4.129682     -0.025440  -134.197887            49         12
+   20       2024-08      158       158 -1.048433     -0.008844   -44.177454            39          7
+   21       2024-09      197       160  2.058243      0.012054    53.804920            48          5
+   22       2024-10      203       208 -2.599313     -0.017167   -61.688089            68          6
+   23       2024-11      137       133 -3.329891     -0.046548  -290.377126            28          6
+   24       2024-12      116       100 -2.807781     -0.019682  -166.840036            18          3
+   25       2025-01      195       166  2.242540      0.019989   100.610208            40          3
+   26       2025-02      181       165  7.385162      0.042965   221.369815            67          9
+   27       2025-03      187       120  0.523712      0.002311    16.370169            29          1
+   28       2025-04      149       130  0.798733      0.010783    73.730349            43          1
+   29       2025-05      186       104  2.255458      0.015084   123.968735            39          0
+   30       2025-06      208        74  1.922490      0.004116    43.794322            22          2
+   31       2025-07      192        99 -5.264894     -0.020525  -170.579313            26          6
+   32       2025-08      184       103  0.067590      0.000483     3.862350            27          6
+   33       2025-09      156        98 -1.939748     -0.007841   -67.547428            23          3
+   34       2025-10      149       116 -1.653146     -0.012709   -98.599135            35          5
+   35       2025-11      141       100 -1.160796     -0.006377   -53.679229            29          1
+   36       2025-12        3        56  3.806510      0.025094   374.185867            25          3
+   37       2026-01      203       105 -2.929476     -0.012585  -104.575758            27          8
+   38       2026-02      202       143 -6.239484     -0.058544  -383.075439            22         19
+   39       2026-03      158       112 -2.451021     -0.008589   -66.462653            15          1
+
+--- Aggregate across 39 traded folds ---
+  Mean per-fold Sharpe   : -0.663
+  Median per-fold Sharpe : -1.048
+  Monthly Sharpe (ann.)  : -0.842   <-- standard backtest figure
+  Sum total return       : -0.1855  (-18.55%)
+  Winning folds          : 16 / 39
+
+--- Per-year regime check (not used for parameter selection) ---
+      n_folds  mean_sharpe  sum_return
+year                                  
+2023       12       -0.241      -0.020
+2024       12       -1.694      -0.159
+2025       12       +0.749      +0.073
+2026        3       -3.873      -0.080

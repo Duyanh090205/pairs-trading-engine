@@ -1,0 +1,45 @@
+{
+  "name": "patch_h1_2024",
+  "n_univ": 100,
+  "data": {
+    "start": "2023-12-20",
+    "end": "2024-06-30",
+    "columns": [
+      "close"
+    ]
+  },
+  "weeks": {
+    "trade_days": 5,
+    "anchor_mode": "trade_start",
+    "trade_start": "2024-01-02",
+    "offset_days": 4
+  },
+  "variants": [
+    [
+      "390",
+      390
+    ],
+    [
+      "780",
+      780
+    ]
+  ],
+  "modes": [
+    [
+      "lag1_close",
+      "close",
+      1
+    ]
+  ],
+  "sim": {
+    "convention": "v0",
+    "z_entry": 2.0
+  },
+  "control": {
+    "n": 150,
+    "seed": 42,
+    "beta_bars": 780
+  },
+  "min_formation_obs": 100,
+  "k_ar": 12
+}

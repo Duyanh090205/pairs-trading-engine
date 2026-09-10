@@ -1,0 +1,61 @@
+{
+  "name": "repro_run10",
+  "n_univ": 100,
+  "data": {
+    "start": "2024-07-01",
+    "end": "2024-12-31",
+    "columns": [
+      "close",
+      "open"
+    ]
+  },
+  "weeks": {
+    "trade_days": 5,
+    "anchor_mode": "index",
+    "anchor_index": 10
+  },
+  "variants": [
+    [
+      "1d",
+      390
+    ],
+    [
+      "2d",
+      780
+    ]
+  ],
+  "modes": [
+    [
+      "lag1_close",
+      "close",
+      1
+    ],
+    [
+      "lag2_close",
+      "close",
+      2
+    ],
+    [
+      "lag3_close",
+      "close",
+      3
+    ],
+    [
+      "lag1_open",
+      "open",
+      1
+    ]
+  ],
+  "sim": {
+    "convention": "legacy10",
+    "z_entry": 2.0,
+    "max_shift": 3
+  },
+  "control": {
+    "n": 150,
+    "seed": 42,
+    "beta_bars": 780
+  },
+  "min_formation_obs": 100,
+  "k_ar": 12
+}

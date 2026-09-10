@@ -1,0 +1,17 @@
+universe 100 | 131 phien | 4,950 cap
+1 tuan trade: 2024-01-02 -> 2024-01-02
+[tuan bat dau 2024-01-02] xong (22s)
+
+========== patch_h1_2024_smoke ==========
+    F        mode       N       gop bp      t     ctl  t_diff     NET
+  390  lag1_close   5,690     -1.03±2.73   -0.4   -1.40    +0.1   -14.8
+  780  lag1_close   2,807     -9.86±4.39   -2.2   -4.47    -0.6   -24.8
+
+----- T GOM THEO TUAN (thuoc do mac dinh; per-trade t o tren chi de doi chieu) -----
+  390: weekly mean +nan±nan bp (t=+nan, 1 tuan) | hieu-so-control +nan (t=+nan)
+  780: weekly mean +nan±nan bp (t=+nan, 1 tuan) | hieu-so-control +nan (t=+nan)
+
+----- MEAN BPS THEO TUAN (lag1_close, sel) -----
+[390] 2024-01-02: -1 (n=5690)
+[780] 2024-01-02: -10 (n=2807)
+tong: 22s

@@ -1,0 +1,55 @@
+replay cache: 528 tickers
+stress_z valid from 2025-01-28 to 2026-07-24 (374 d)
+
+== 2026-04: formation 2025-04-01..2026-03-31 | REGIME ok (stress_z=+0.97 q67=+1.07) ==
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 526 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 526 tickers (138075 pairs)...
+  [v4-discovery] pairwise tests done: 138075 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 159 -> 144 (15 dropped)
+   144 pairs, 27 trades (z/sl/eom=1/0/26)
+
+== 2026-05: formation 2025-05-01..2026-04-30 | REGIME HALT (stress_z=+1.53 q67=+0.93) ==
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 526 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 526 tickers (138075 pairs)...
+  [v4-discovery] pairwise tests done: 138075 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 127 -> 94 (33 dropped)
+   94 pairs, 5 trades (z/sl/eom=1/0/4)
+
+== 2026-06: formation 2025-06-01..2026-05-31 | REGIME HALT (stress_z=+1.57 q67=+1.13) ==
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 525 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 525 tickers (137550 pairs)...
+  [v4-discovery] pairwise tests done: 137550 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 187 -> 166 (21 dropped)
+   166 pairs, 26 trades (z/sl/eom=8/0/18)
+
+== 2026-07: formation 2025-07-01..2026-06-30 | REGIME HALT (stress_z=+2.08 q67=+1.50) ==
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 523 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 523 tickers (136503 pairs)...
+  [v4-discovery] pairwise tests done: 136503 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 158 -> 141 (17 dropped)
+   141 pairs, 4 trades (z/sl/eom=0/0/4)
+
+======================================================================
+REPLAY 2026-04..07 (ship Z=3.0/SL5.0, probe-calibrated costs)
+======================================================================
+2026-04: 27 trades | gross $-1,095 | net_base $-1,189 | net_s2s4 $-1,118 | exits z/sl/eom=1/0/26
+2026-05 HALT: 5 trades | gross $-618 | net_base $-638 | net_s2s4 $-624 | exits z/sl/eom=1/0/4
+2026-06 HALT: 26 trades | gross $+9,873 | net_base $+9,755 | net_s2s4 $+9,837 | exits z/sl/eom=8/0/18
+2026-07 HALT PARTIAL: 4 trades | gross $+3,390 | net_base $+3,377 | net_s2s4 $+3,387 | exits z/sl/eom=0/0/4
+----------------------------------------------------------------------
+ALL(incl halted-as-zero): gross $+11,550 | net_base $+11,304 | net_s2s4 $+11,482 | s2s4 saves $+178
+traded months only: gross $-1,095 | net_base $-1,189 | net_s2s4 $-1,118 | s2s4 saves $+72
+
+TOTAL 164s

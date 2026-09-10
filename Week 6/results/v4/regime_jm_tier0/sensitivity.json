@@ -1,0 +1,22 @@
+{
+  "31.6":{
+    "a_bear_of_4":0,
+    "crit_a":false,
+    "crit_b":true,
+    "jm_bear_profitable":2,
+    "comp_halt_profitable":5,
+    "crit_c":true,
+    "n_profitable_23_2511":22,
+    "PASS":false
+  },
+  "316.0":{
+    "a_bear_of_4":0,
+    "crit_a":false,
+    "crit_b":true,
+    "jm_bear_profitable":8,
+    "comp_halt_profitable":5,
+    "crit_c":false,
+    "n_profitable_23_2511":22,
+    "PASS":false
+  }
+}

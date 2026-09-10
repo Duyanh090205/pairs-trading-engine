@@ -1,0 +1,39 @@
+universe 100 | 252 phien (co runway) | 4,950 cap
+[2024-07-01] adaptive=752 bar | xong 6 bien the (43s)
+[2024-07-09] adaptive=753 bar | xong 6 bien the (78s)
+[2024-07-16] adaptive=781 bar | xong 6 bien the (117s)
+[2024-07-23] adaptive=693 bar | xong 6 bien the (155s)
+[2024-07-30] adaptive=625 bar | xong 6 bien the (191s)
+[2024-08-06] adaptive=555 bar | xong 6 bien the (229s)
+[2024-08-13] adaptive=532 bar | xong 6 bien the (264s)
+[2024-08-20] adaptive=715 bar | xong 6 bien the (295s)
+[2024-08-27] adaptive=803 bar | xong 6 bien the (332s)
+[2024-09-04] adaptive=814 bar | xong 6 bien the (364s)
+[2024-09-11] adaptive=695 bar | xong 6 bien the (398s)
+[2024-09-18] adaptive=691 bar | xong 6 bien the (433s)
+[2024-09-25] adaptive=728 bar | xong 6 bien the (466s)
+[2024-10-02] adaptive=758 bar | xong 6 bien the (501s)
+[2024-10-09] adaptive=776 bar | xong 6 bien the (537s)
+[2024-10-16] adaptive=780 bar | xong 6 bien the (572s)
+[2024-10-23] adaptive=862 bar | xong 6 bien the (609s)
+[2024-10-30] adaptive=827 bar | xong 6 bien the (643s)
+[2024-11-06] adaptive=793 bar | xong 6 bien the (680s)
+[2024-11-13] adaptive=759 bar | xong 6 bien the (715s)
+[2024-11-20] adaptive=742 bar | xong 6 bien the (749s)
+[2024-11-27] adaptive=776 bar | xong 6 bien the (784s)
+[2024-12-05] adaptive=807 bar | xong 6 bien the (819s)
+[2024-12-12] adaptive=811 bar | xong 6 bien the (854s)
+[2024-12-19] adaptive=774 bar | xong 6 bien the (892s)
+
+========= TANG 1: QUET MIN WINDOW (H2/2024, bar 1-min) =========
+   window       N       gop bp      t     ctl  t_diff     NET
+      390 103,305     +6.40±1.07   +6.0   -1.35    +2.1    -7.3
+      585  45,690     +5.57±1.55   +3.6   -3.26    +1.8    -7.8
+      780  64,837     +5.98±1.72   +3.5   -3.11    +2.1    -7.7
+     1170  44,903     +2.24±2.27   +1.0   +0.79    +0.4   -11.3
+     1560  29,861     -9.27±2.88   -3.2   -1.46    -1.7   -23.2
+ adaptive  58,484     +5.65±1.58   +3.6   -2.35    +1.9    -8.0
+
+adaptive da chon window: min 532 | median 759 | max 862 bar
+LUAT (net cao nhat, du t>=2 & t_diff>=2): QUAN QUAN TANG 1 = 390 (net -7.3)
+tong: 892s

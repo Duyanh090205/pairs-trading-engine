@@ -1,0 +1,36 @@
+universe 100 | 128 ngay | bien the 2d (780 bar)
+[2024-07-16] chon 912 cap (12s)
+[2024-07-23] chon 907 cap (19s)
+[2024-07-30] chon 837 cap (25s)
+[2024-08-06] chon 1818 cap (32s)
+[2024-08-13] chon 1039 cap (38s)
+[2024-08-20] chon 627 cap (44s)
+[2024-08-27] chon 1439 cap (51s)
+[2024-09-04] chon 459 cap (56s)
+[2024-09-11] chon 821 cap (62s)
+[2024-09-18] chon 718 cap (68s)
+[2024-09-25] chon 615 cap (74s)
+[2024-10-02] chon 802 cap (80s)
+[2024-10-09] chon 886 cap (86s)
+[2024-10-16] chon 1100 cap (93s)
+[2024-10-23] chon 1153 cap (99s)
+[2024-10-30] chon 554 cap (105s)
+[2024-11-06] chon 993 cap (111s)
+[2024-11-13] chon 624 cap (117s)
+[2024-11-20] chon 768 cap (123s)
+[2024-11-27] chon 924 cap (129s)
+[2024-12-05] chon 536 cap (134s)
+[2024-12-12] chon 762 cap (139s)
+[2024-12-19] chon 1480 cap (146s)
+
+========== HL & THOI GIAN GIU LENH — bien the 2d, H2/2024 ==========
+HL spread TRONG CUA SO HOC (780 bar):  p25 17p | median 23p | p75 33p | NaN 0%
+HL spread O TUAN TRADE (out-of-win):   p25 135p | median 212p | p75 319p | NaN 0%
+
+THOI GIAN GIU LENH (59,480 trades):
+  p25 65 phut | median 344 phut | p75 902 phut | p95 1941 phut
+  lenh bi ep dong cuoi tuan (chua hoi kip): 31.5%
+  pnl lenh tu-hoi: +138.31 bp | pnl lenh bi ep dong: -267.85 bp
+  hit rate: 73.1% | thang tb +136.8 bp | thua tb -334.0 bp
+
+tong: 146s

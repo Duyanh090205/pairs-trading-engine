@@ -1,0 +1,74 @@
+V4 cost-engine audit — Week 5 dynamic vs V4 baseline flat
+
+======================================================================
+  STEP A — Unit sanity on cost_engine primitives
+======================================================================
+  [PASS] kappa tiers: 5->0.3, 15->0.5, 25->0.8 (boundaries 8, 20)
+  Synthetic trade: notional=$10k/leg, half_spread=5bps, std=2bps, 15 cal days
+     spread_$=20.00  (expect ~$20: 4 sides x leg x 5bps x $10k / 10000)
+     impact_$=4.00  (expect ~$4: 4 sides x leg x 1bps x $10k / 10000)
+     borrow_$=2.05  (expect ~$2.05)
+     total_$ =26.05  (expect ~$26)
+  [PASS] cost magnitudes within expected hand-calc bounds
+  [PASS] same-day trade -> borrow $0 correctly
+
+Loading cost data...
+  cache: 544,223 rows, kappa map: 526 tickers
+
+======================================================================
+  STEP B — Lookup hit rate on real fold-1 data
+======================================================================
+  Loading daily cache + running discovery to get fold-1 tickers/dates...
+  [v4-discovery] 511 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  Fold 1 has 157 unique tickers, 20 trading days
+  Total potential lookups: 3,140
+
+  Sample lookups:
+    ABBV   2023-01-03  half_spread=4.01 bps  spread_std=2.54 bps  [REAL]
+    ABBV   2023-01-04  half_spread=3.98 bps  spread_std=2.71 bps  [REAL]
+    ABBV   2023-01-05  half_spread=3.36 bps  spread_std=2.77 bps  [REAL]
+    ABBV   2023-01-06  half_spread=3.61 bps  spread_std=2.62 bps  [REAL]
+    ABBV   2023-01-09  half_spread=3.65 bps  spread_std=1.78 bps  [REAL]
+
+  Hit summary: 3,140 real (100.0%), 0 fallback (0.0%)
+  [PASS] >95% real hits â€” lookup is hitting cache properly
+
+======================================================================
+  STEP C â€” Cross-path comparison: flat vs dynamic on fold 1 trades
+======================================================================
+  [v4-discovery] 511 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  Running fold 1 with FLAT cost...
+  Running fold 1 with DYNAMIC cost...
+
+  Pair results: flat=96, dynamic=96
+
+  Gross P&L: flat=$   +8,823.99  dynamic=$   +8,823.99
+  [PASS] gross P&L identical (good â€” only net differs)
+
+  Per-trade cost ($) across 53 pairs that traded:
+    flat    : median $61.49, mean $72.25
+    dynamic : median $17.24, mean $17.84
+    ratio dyn/flat: median 0.233, mean 0.249
+
+  Per-trade cost as bps of FULL pair notional:
+    flat    : median 61.0 bps  (expected ~60bps = 30bps x 2 sides)
+    dynamic : median 14.3 bps  (expected: depends on real spreads)
+
+  [INFO] dynamic cost is 28% of flat â€” moderate reduction
+
+  Sample 5 trade-level cost components (dynamic):
+    BK/ITW: notional=$20,778, 1 trades, entry=$12.30 exit=$10.34 borrow=$3.84  (per trade: $26.48)
+    AON/NEE: notional=$10,000, 2 trades, entry=$11.37 exit=$13.28 borrow=$0.68  (per trade: $12.67)
+    XLC/ZBRA: notional=$10,000, 1 trades, entry=$7.89 exit=$5.38 borrow=$0.48  (per trade: $13.75)
+    NOC/TMO: notional=$10,000, 1 trades, entry=$3.17 exit=$2.67 borrow=$1.37  (per trade: $7.20)
+    HUM/NOC: notional=$10,397, 1 trades, entry=$3.37 exit=$3.25 borrow=$0.78  (per trade: $7.40)

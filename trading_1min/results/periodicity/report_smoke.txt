@@ -1,0 +1,25 @@
+===== PERIODICITY SCAN (smoke) — spec pre-commit periodicity_spec.md =====
+universe 100 | 61 phien | 793 (ngay,khung)
+
+[FM]   gamma_A (same-slot)      = -0.0058  t_ngay = -0.93  (46 ngay)
+[FM]   gamma_A - gamma_B        = +0.0095  t_ngay = +1.02
+[econ] decile L-S gross         = +0.20 bp/luot  t_ngay = +0.26
+[econ] san phi danh muc (mean)  = 7.55 bp
+
+[chan doan] gamma_A theo khung nua-gio:
+  khung  0 (09:30) gamma_A +0.0498 (t +1.7, 46 ngay)
+  khung  1 (10:00) gamma_A +0.0172 (t +0.7, 46 ngay)
+  khung  2 (10:30) gamma_A -0.0079 (t -0.3, 46 ngay)
+  khung  3 (11:00) gamma_A -0.0241 (t -1.0, 46 ngay)
+  khung  4 (11:30) gamma_A -0.0105 (t -0.5, 46 ngay)
+  khung  5 (12:00) gamma_A -0.0190 (t -0.8, 46 ngay)
+  khung  6 (12:30) gamma_A -0.0230 (t -1.0, 46 ngay)
+  khung  7 (13:00) gamma_A -0.0202 (t -0.8, 46 ngay)
+  khung  8 (13:30) gamma_A +0.0011 (t +0.0, 46 ngay)
+  khung  9 (14:00) gamma_A +0.0039 (t +0.2, 46 ngay)
+  khung 10 (14:30) gamma_A -0.0432 (t -1.4, 46 ngay)
+  khung 11 (15:00) gamma_A -0.0022 (t -0.1, 46 ngay)
+  khung 12 (15:30) gamma_A +0.0029 (t +0.2, 46 ngay)
+
+KHOI-TEST xong — chua ap luat.
+tong: 5s

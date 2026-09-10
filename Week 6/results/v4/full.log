@@ -1,0 +1,42 @@
+V4 daily pipeline | entry_z=2.0, z_window=60, hard_sl_z=4.0
+Folds: 39 | out_dir=d:\Quant Finance\Quant Program\Week 6\results\v4\full
+Loading daily cache from daily_phase3/ ...
+  loaded 528 tickers in 0.9s
+
+  Fold 01 [2023-01]: slicing daily cache for formation 2022-01-01 .. 2022-12-31
+  Fold 01 [2023-01]: daily formation: 511 tickers
+  [v4-discovery] 511 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  Fold 01 [2023-01]: discovery: 189 pairs after beta>0 | cum_var=0.623
+  Fold 01 [2023-01]: slicing daily cache for trading 2023-01-01 .. 2023-01-31
+  Fold 01 [2023-01]: daily trading: 512 tickers
+  Fold 01 [2023-01]: trading residual: 20 bars x 506 tickers
+  Fold 01 [2023-01]: complete in 35.0s | n_trades=54, sharpe=+1.782, total_return=+0.0066, exits z/sl/open=7/1/47
+  Fold 02 [2023-02]: slicing daily cache for formation 2022-02-01 .. 2023-01-31
+  Fold 02 [2023-02]: daily formation: 512 tickers
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  Fold 02 [2023-02]: discovery: 190 pairs after beta>0 | cum_var=0.614
+  Fold 02 [2023-02]: slicing daily cache for trading 2023-02-01 .. 2023-02-28
+  Fold 02 [2023-02]: daily trading: 512 tickers
+Traceback (most recent call last):
+  File "d:\Quant Finance\Quant Program\Week 6\run_v4_pipeline.py", line 344, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "d:\Quant Finance\Quant Program\Week 6\run_v4_pipeline.py", line 296, in main
+    res = run_fold_v4(
+          ^^^^^^^^^^^^
+  File "d:\Quant Finance\Quant Program\Week 6\run_v4_pipeline.py", line 199, in run_fold_v4
+    resid_trade_dict = project_residual(trading_daily_raw, loadings_W, factor_tickers)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Quant Finance\Quant Program\Week 6\engine\phase1_cointegration\factor_residual.py", line 217, in project_residual
+    raise ValueError(
+ValueError: project_residual: too few aligned trading obs (19)

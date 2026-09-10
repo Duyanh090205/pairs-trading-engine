@@ -1,0 +1,95 @@
+V4 EXEC SIMULATOR REPORT — V-close vs V-open vs V-1530 (OFFLINE)
+======================================================================
+
+(1) LEG SIZING (D3): BETA-SCALED (live/main.py:407-408).
+      qty_a = notional / dp_a ; qty_b = notional*|beta| / dp_b
+      leg-A $notional = N ; leg-B $notional = N*|beta|.
+      (live floors to int shares >=1; sim uses continuous shares —
+       slippage_bps is scale-invariant so this does not move bps.)
+
+(2) TIMING CONVENTION (faithful to engine 1-bar lag + live order path):
+      ENTRY: decision = close of session BEFORE entry_date (=close[idx-1],
+             = engine fill = live decision_price); V-open fill = open of
+             entry_date + real L1 half-spread.
+      EXIT zero_cross/hard_sl: decision = close of session BEFORE exit_date;
+             V-open fill = open of exit_date + real L1.
+      EXIT open_at_eom: decision = close of eng_exit_date (engine holds
+             through last bar); V-open fill = open of eng_exit_date + real L1.
+
+(3) HEADLINE  V-close -> V-open:
+      avg_net_bps: +52.71 -> +23.68  (delta -29.02 bps)
+      V-open extra cost/trade: mean +5.40 bps, median +5.33 bps
+      Sharpe (backtest / V-close / V-open  |  V-close->V-open delta):
+        mean per-fold [ship '+1.28' convention]   : +1.279 / +1.342 / +1.146  (delta -0.196)
+        monthly-annualized [run_v4_pipeline std]  : +0.660 / +0.728 / +0.318  (delta -0.410)
+        pooled-daily [metrics_daily]              : +0.457 / +0.502 / +0.228  (delta -0.274)
+
+(4) VALIDATION GATES:
+      Gate 1 (compute_pair_trade_cost total_$ == ledger cost_backtest): PASS  max|Δ|=2.84e-14
+      Gate 2 (formula == live cost_overlay.compute_realized_cost_usd): PASS
+          live=(slip=38.900000, notl=20085.0000, bps=19.367687) | mine=(slip=38.900000, notl=20085.0000, bps=19.367687) | max|Δ|=0.00e+00
+      Internal (reconstructed backtest daily net vs engine-captured): max|Δ|=1.82e-12/day
+      NOTE: live's real closed trades are 2026-05..07 (outside on-disk data
+      <=2026-03), so a real-data realized-cost comparison comes later as
+      live accumulates fills; Gate 2 proves the FORMULA matches now.
+
+(5) COVERAGE: 424/428 trades priced for V-open (0.9% skipped for missing next-session/open/L1 data).
+
+(6) V-OPEN EXTRA COST BY OVERNIGHT-GAP SIZE:
+      gap_bucket   n  mean_gap_bps  mean_vopen_extra_bps  median_vopen_extra_bps  mean_slippage_bps
+            0-10  23      5.122386             10.858752               -0.902417          13.450436
+           10-25  59     17.819538             14.307047                7.626995          16.889145
+           25-50 131     36.667520              0.783111                9.559873           3.523040
+          50-100 110     72.388307             10.495148                4.758814          13.615917
+            >100 101    198.496078             -0.620673               -2.037808           2.840833
+
+(7) BRACKET TABLE — execution cost (bps/trade) + Sharpe (3 conventions)
+    cost_bps = mean/median of that variant's own per-trade execution
+    cost over its coverage set; avg_net_bps = portfolio sum(net)/sum(notional).
+    Sharpe: mpf=mean-per-fold (ship '+1.28'), mon=monthly-annualized
+    (run_v4_pipeline), pool=pooled-daily (metrics_daily).
+
+      variant          cost_mean  cost_med   avg_net  Sh(mpf)  Sh(mon)  Sh(pool)
+      --------------------------------------------------------------------------
+      V-close (point)       4.33      4.07     52.71    1.342    0.728     0.502
+      V-open-mid            4.26      3.60     46.31    1.408    0.638     0.447
+      V-open (consv)        9.73     10.00     23.68    1.146    0.318     0.228
+      V-1530-mid            6.98      3.24     45.27    1.255    0.610     0.452
+      V-1530 (consv)        9.79      6.67     34.71    1.119    0.463     0.346
+
+      Reading: V-close is a POINT (idealized). V-open and V-1530 are
+      BRACKETS [mid (optimistic, no spread) .. consv (taker, +/- real L1)].
+      Bracket width = the real L1 half-spread crossed (open vs 15:30).
+      CAVEAT: each row's cost_mean/median, avg_net_bps and Sharpe are over
+      that variant's OWN coverage (V-open 424, V-1530 392 trades); the
+      V-1530 avg_net/Sharpe blend a V-close fallback on the 8.4% of trades
+      with no 15:30 bar, which FLATTERS them. For the clean apples-to-apples
+      V-1530-vs-V-open read use the both-set decomposition in section (8).
+
+(8) V-1530 vs V-OPEN VERDICT + DECOMPOSITION
+      (conservative/taker, on the 392 trades priced in BOTH variants)
+      spread saving (open hs - 15:30 hs)      = +2.66 bps/trade
+      intraday-drift diff (v1530mid - vopenmid) = +2.84 bps/trade
+      net cost diff (V-1530 - V-open) = drift - saving
+                    = +2.84 - (+2.66) = +0.19 bps
+      VERDICT: V-1530 COSTLIER than V-open.
+      => The cheaper 15:30 spread does NOT overcome the extra open->15:30
+         intraday drift; executing at the open is cheaper on average.
+      15:30 COVERAGE: 392/428 = 91.6% (sessions with a 15:30-15:45 bar for all four legs).
+
+      NOTE (deferred): passive-fill realism is NOT modelled here. No
+      OHLC/Gate-0 machine estimates a 15:30 limit-order fill probability;
+      that is deferred to probe calibration. The [mid..consv] bracket
+      already brackets passive(~mid) <-> taker(~spread).
+
+(9) VALIDATION — per-trade mid <= conservative (spread crossing >= 0):
+      V-open-mid <= V-open : 0 violation(s)
+      V-1530-mid <= V-1530 : 0 violation(s)
+      => PASS
+      V-close/V-open/Gate1/Gate2 computations are UNCHANGED by the new
+      variants (additive only); sections (3)-(5) above re-print them.
+
+Exit-reason mix:
+      open_at_eom: 385
+      zero_cross: 31
+      hard_sl: 12

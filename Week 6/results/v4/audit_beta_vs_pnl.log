@@ -1,0 +1,336 @@
+=== V4 β vs P&L audit (39 folds, dynamic cost) ===
+
+loaded cache + cost data in 1.2s
+
+  [v4-discovery] 511 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 01 [2023-01]: pairs= 96  max|β|=   12.97  fold_pnl=$     +7,611  (37s)
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 02 [2023-02]: pairs=107  max|β|=   31.31  fold_pnl=$    +14,101  (28s)
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 03 [2023-03]: pairs=149  max|β|=   14.51  fold_pnl=$    -40,447  (31s)
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 507 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 507 tickers (128271 pairs)...
+  [v4-discovery] pairwise tests done: 128271 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 04 [2023-04]: pairs= 77  max|β|=   12.72  fold_pnl=$     +8,494  (27s)
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 508 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 508 tickers (128778 pairs)...
+  [v4-discovery] pairwise tests done: 128778 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 05 [2023-05]: pairs= 24  max|β|=   16.82  fold_pnl=$     -6,394  (38s)
+  [v4-discovery] 514 formation tickers
+  [v4-discovery] hard screens: 510 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 510 tickers (129795 pairs)...
+  [v4-discovery] pairwise tests done: 129795 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 06 [2023-06]: pairs=122  max|β|=  322.64  fold_pnl=$     +9,389  (36s)
+  [v4-discovery] 514 formation tickers
+  [v4-discovery] hard screens: 510 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 510 tickers (129795 pairs)...
+  [v4-discovery] pairwise tests done: 129795 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 07 [2023-07]: pairs=123  max|β|=  652.67  fold_pnl=$   +136,563  (34s)
+  [v4-discovery] 515 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 08 [2023-08]: pairs=  7  max|β|=   75.52  fold_pnl=$    -66,929  (33s)
+  [v4-discovery] 516 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 09 [2023-09]: pairs= 52  max|β|=  232.01  fold_pnl=$   -157,473  (30s)
+  [v4-discovery] 517 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 10 [2023-10]: pairs= 59  max|β|=  586.38  fold_pnl=$   +290,082  (26s)
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 510 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 510 tickers (129795 pairs)...
+  [v4-discovery] pairwise tests done: 129795 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 11 [2023-11]: pairs= 90  max|β|=   23.57  fold_pnl=$     +5,602  (36s)
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 12 [2023-12]: pairs=125  max|β|=  154.69  fold_pnl=$     -8,727  (36s)
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 13 [2024-01]: pairs=133  max|β|=   22.27  fold_pnl=$    -22,143  (30s)
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 14 [2024-02]: pairs= 65  max|β|=   38.20  fold_pnl=$     +3,590  (36s)
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 15 [2024-03]: pairs= 96  max|β|=  215.22  fold_pnl=$    +94,897  (34s)
+  [v4-discovery] 519 formation tickers
+  [v4-discovery] hard screens: 512 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 512 tickers (130816 pairs)...
+  [v4-discovery] pairwise tests done: 130816 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 16 [2024-04]: pairs=115  max|β|=  104.36  fold_pnl=$    -24,291  (28s)
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 513 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 513 tickers (131328 pairs)...
+  [v4-discovery] pairwise tests done: 131328 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 17 [2024-05]: pairs=116  max|β|=   71.30  fold_pnl=$     -4,935  (30s)
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 514 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 514 tickers (131841 pairs)...
+  [v4-discovery] pairwise tests done: 131841 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 18 [2024-06]: pairs=124  max|β|=   33.86  fold_pnl=$    -40,797  (37s)
+  [v4-discovery] 520 formation tickers
+  [v4-discovery] hard screens: 514 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 514 tickers (131841 pairs)...
+  [v4-discovery] pairwise tests done: 131841 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 19 [2024-07]: pairs=119  max|β|=  495.70  fold_pnl=$    -13,407  (33s)
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 515 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 515 tickers (132355 pairs)...
+  [v4-discovery] pairwise tests done: 132355 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 20 [2024-08]: pairs=144  max|β|=   51.34  fold_pnl=$    +36,011  (34s)
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 21 [2024-09]: pairs=163  max|β|=  165.23  fold_pnl=$    -88,658  (36s)
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 22 [2024-10]: pairs=162  max|β|=   12.15  fold_pnl=$    -16,784  (39s)
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 23 [2024-11]: pairs= 64  max|β|=   33.65  fold_pnl=$    -11,671  (37s)
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 24 [2024-12]: pairs= 92  max|β|=    5.09  fold_pnl=$     +2,530  (32s)
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 25 [2025-01]: pairs=187  max|β|=   16.79  fold_pnl=$     +3,343  (32s)
+  [v4-discovery] 523 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 26 [2025-02]: pairs= 91  max|β|= 2708.55  fold_pnl=$ +2,067,466  (29s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 27 [2025-03]: pairs=136  max|β|=    5.82  fold_pnl=$     +5,268  (32s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 28 [2025-04]: pairs=103  max|β|=   31.69  fold_pnl=$    +29,452  (31s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 29 [2025-05]: pairs= 72  max|β|=    3.59  fold_pnl=$     +8,477  (29s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 30 [2025-06]: pairs= 86  max|β|=   23.43  fold_pnl=$     +2,648  (29s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 31 [2025-07]: pairs= 79  max|β|=   93.79  fold_pnl=$    +62,216  (28s)
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 32 [2025-08]: pairs=104  max|β|=   95.79  fold_pnl=$   -161,958  (37s)
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 33 [2025-09]: pairs= 71  max|β|=   15.65  fold_pnl=$    -18,165  (36s)
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 34 [2025-10]: pairs= 90  max|β|=  232.72  fold_pnl=$     +9,513  (29s)
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 35 [2025-11]: pairs= 89  max|β|=  114.87  fold_pnl=$   +266,467  (28s)
+  [v4-discovery] 527 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 36 [2025-12]: pairs=  3  max|β|=    2.79  fold_pnl=$         +0  (27s)
+  [v4-discovery] 527 formation tickers
+  [v4-discovery] hard screens: 523 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 523 tickers (136503 pairs)...
+  [v4-discovery] pairwise tests done: 136503 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 37 [2026-01]: pairs=107  max|β|=  101.46  fold_pnl=$   +126,053  (36s)
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 524 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 524 tickers (137026 pairs)...
+  [v4-discovery] pairwise tests done: 137026 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 38 [2026-02]: pairs=120  max|β|=   59.90  fold_pnl=$    -31,524  (39s)
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 524 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 524 tickers (137026 pairs)...
+  [v4-discovery] pairwise tests done: 137026 candidates
+WARNING:engine_daily.discovery_daily:FALLBACK CAP: kept top 500 by p-value
+  Fold 39 [2026-03]: pairs=141  max|β|=   15.75  fold_pnl=$    +10,760  (39s)
+
+Wrote D:\Quant Finance\Quant Program\Week 6\results\v4\beta_vs_pnl_all_folds.csv (3,903 pair-fold rows)
+
+================================================================================
+DO HIGH-β PAIRS MAKE OR LOSE MONEY?
+================================================================================
+          n_pairs     sum_net  mean_net  median_net    std_net  pct_winning  max_abs_net
+beta_bin                                                                                
+[0,1)        2001   -17072.95     -8.53         0.0     554.99        29.59      3428.83
+[1,2)        1060   -37208.01    -35.10         0.0     765.62        30.66      4409.63
+[2,3)         356   -47432.43   -133.24         0.0    1218.72        24.72      7941.79
+[3,5)         251    50796.88    202.38         0.0    1553.79        29.48      9260.88
+[5,10)        131   -34767.57   -265.40         0.0    3717.36        25.19     21332.62
+[10,50)        77    10917.68    141.79         0.0    9691.05        25.97     44834.43
+[50,∞)         27  2560995.43  94851.68         0.0  399970.79        44.44   2041523.32
+
+================================================================================
+CONTRIBUTION TO TOTAL P&L by β bucket
+================================================================================
+          n_pairs     sum_net  pct_of_total_pnl  pct_of_pairs
+beta_bin                                                     
+[0,1)        2001   -17072.95             -0.69         51.27
+[1,2)        1060   -37208.01             -1.50         27.16
+[2,3)         356   -47432.43             -1.91          9.12
+[3,5)         251    50796.88              2.04          6.43
+[5,10)        131   -34767.57             -1.40          3.36
+[10,50)        77    10917.68              0.44          1.97
+[50,∞)         27  2560995.43            103.01          0.69
+
+  Total run P&L: $2,486,229
+
+================================================================================
+TOP-10 MOST EXTREME |β| PAIRS — did they win or lose?
+================================================================================
+ fold trading_month ticker_a ticker_b  beta_pca  n_trades   gross_pnl     net_pnl  pct_of_fold_pnl
+   26       2025-02     GEHC      WMT  +2708.55         1 +2041549.05 +2041523.32           +98.75
+    7       2023-07      TEL      XYL   +652.67         0       +0.00       +0.00            +0.00
+    7       2023-07      PLD      VST   +645.39         1  +127501.86  +127479.25           +93.35
+   10       2023-10      DTE      SWK   +586.38         2  +247606.18  +247564.60           +85.34
+   19       2024-07      EXR     FTNT   +495.70         0       +0.00       +0.00            -0.00
+    6       2023-06     VICI      VST   +322.64         0       +0.00       +0.00            +0.00
+   34       2025-10     MSCI      UAL   +232.72         0       +0.00       +0.00            +0.00
+    9       2023-09      KMI      NOW   +232.01         1   +42604.25   +42580.55           -27.04
+    9       2023-09       GL     PANW   +223.79         1  -145628.71  -145643.31           +92.49
+   15       2024-03      ITW     MNST   +215.22         1   +88952.72   +88938.39           +93.72
+
+================================================================================
+VARIANCE EFFECT — std of P&L by β bucket (are high-β pairs just noisier?)
+================================================================================
+  (Higher std relative to mean = noisier, not necessarily losing)
+             n      mean        std  sharpe_like
+beta_bin                                        
+[0,1)     2001     -8.53     554.99    -0.015370
+[1,2)     1060    -35.10     765.62    -0.045845
+[2,3)      356   -133.24    1218.72    -0.109328
+[3,5)      251    202.38    1553.79     0.130249
+[5,10)     131   -265.40    3717.36    -0.071395
+[10,50)     77    141.79    9691.05     0.014631
+[50,∞)      27  94851.68  399970.79     0.237147

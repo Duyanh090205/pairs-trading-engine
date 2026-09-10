@@ -1,0 +1,9 @@
+(a) Dec25-Mar26 dampener = -0.6187% (floor -0.75%) -> PASS
+(b) replay 2026 dampener = $+3,369 (floor +$3,400) -> FAIL
+(c) folds 1-39 dampener = +2.1392% (floor +1.80%) -> PASS
+VERDICT: FAIL
+of 15 composite-halt months: 8 at mult 0.5, 7 at 0.0, 0 at 1.0(boundary)
+folds 1-39: nofilter=+0.8432% composite=+2.3176% damp=+2.1392%
+replay usd: nofilter=+11,304 composite=-1,189 damp=+3,369
+sensitivity mid=0.25: a=P b=F c=P -> FAIL
+sensitivity mid=0.75: a=F b=P c=P -> FAIL

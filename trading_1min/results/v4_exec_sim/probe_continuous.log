@@ -1,0 +1,35 @@
+[ok] probe account dd326195-8580-415d-9e62-967fffd63731 | equity $999,957 | PAPER
+
+=== cycle 1 @ 13:06:55 ET (orders so far: 0) ===
+    market filled: 7 | passive filled: 5/9 | bad_quote skips: 5
+
+=== cycle 2 @ 13:24:32 ET (orders so far: 25) ===
+    market filled: 6 | passive filled: 3/9 | bad_quote skips: 6
+
+=== cycle 3 @ 13:42:00 ET (orders so far: 46) ===
+    market filled: 7 | passive filled: 3/9 | bad_quote skips: 4
+
+=== cycle 4 @ 13:59:36 ET (orders so far: 70) ===
+    market filled: 6 | passive filled: 5/9 | bad_quote skips: 5
+
+=== cycle 5 @ 14:17:10 ET (orders so far: 94) ===
+    market filled: 7 | passive filled: 7/9 | bad_quote skips: 4
+
+=== cycle 6 @ 14:34:52 ET (orders so far: 122) ===
+    market filled: 8 | passive filled: 3/9 | bad_quote skips: 1
+
+=== cycle 7 @ 14:52:35 ET (orders so far: 150) ===
+    market filled: 7 | passive filled: 4/9 | bad_quote skips: 5
+
+=== cycle 8 @ 15:10:21 ET (orders so far: 174) ===
+    market filled: 6 | passive filled: 5/9 | bad_quote skips: 5
+
+=== cycle 9 @ 15:28:03 ET (orders so far: 198) ===
+    market filled: 8 | passive filled: 6/9 | bad_quote skips: 1
+
+=== cycle 10 @ 15:45:51 ET (orders so far: 229) ===
+    market filled: 7 | passive filled: 3/9 | bad_quote skips: 4
+[stop] market closed at 16:03 ET.
+
+[ok] final positions: FLAT
+[done] 10 cycle(s), 253 orders. -> D:\Quant Finance\Pairs Trading Strategy\trading_1min\results\v4_exec_sim\probe_fills.csv

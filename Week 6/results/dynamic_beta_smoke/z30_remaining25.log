@@ -1,0 +1,240 @@
+  ENTRY_Z=3.0, HARD_SL_Z=5.0
+=== Dynamic-β smoke test ===
+timestamp: 20260525_171400
+git SHA: 59fb8f8dcfba7e4f43335fae920b8a5d5d4a8bd3
+folds: [2, 6, 8, 9, 12, 14, 15, 16, 17, 19, 20, 23, 24, 25, 27, 29, 30, 31, 33, 34, 35, 36, 37, 38, 39]
+arms: ['A0_static_v4', 'B1c_hl10', 'B1c_hl20', 'B1c_hl30', 'B1c_hl60']
+cost mode: DYNAMIC (Week 5)
+out_dir: D:\Quant Finance\Quant Program\Week 6\results\dynamic_beta_smoke\20260525_171400
+Loading daily cache...
+  loaded 528 tickers in 0.9s
+Loading cost data (Week 5 spread + kappa)...
+  loaded 544223 spread rows, 526 kappa tickers in 0.1s
+Fold 02 [2023-02] — slicing formation 2022-02-01..2023-01-31
+  [v4-discovery] 512 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+  [v4-discovery] |beta|<=5 cap: 190 -> 173 (17 dropped)
+  Fold 02: discovery=173 pairs
+  Fold 02: done in 30.9s | 173 pairs × 5 arms | skipped 0 no-data
+Fold 06 [2023-06] — slicing formation 2022-06-01..2023-05-31
+  [v4-discovery] 514 formation tickers
+  [v4-discovery] hard screens: 510 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 510 tickers (129795 pairs)...
+  [v4-discovery] pairwise tests done: 129795 candidates
+  [v4-discovery] |beta|<=5 cap: 193 -> 170 (23 dropped)
+  Fold 06: discovery=170 pairs
+  Fold 06: done in 30.4s | 170 pairs × 5 arms | skipped 0 no-data
+Fold 08 [2023-08] — slicing formation 2022-08-01..2023-07-31
+  [v4-discovery] 515 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+  [v4-discovery] |beta|<=5 cap: 91 -> 64 (27 dropped)
+  Fold 08: discovery=64 pairs
+  Fold 08: done in 27.5s | 64 pairs × 5 arms | skipped 0 no-data
+Fold 09 [2023-09] — slicing formation 2022-09-01..2023-08-31
+  [v4-discovery] 516 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+  [v4-discovery] |beta|<=5 cap: 244 -> 136 (108 dropped)
+  Fold 09: discovery=136 pairs
+  Fold 09: done in 29.4s | 136 pairs × 5 arms | skipped 0 no-data
+Fold 12 [2023-12] — slicing formation 2022-12-01..2023-11-30
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+  [v4-discovery] |beta|<=5 cap: 198 -> 182 (16 dropped)
+  Fold 12: discovery=182 pairs
+  Fold 12: done in 30.7s | 182 pairs × 5 arms | skipped 0 no-data
+Fold 14 [2024-02] — slicing formation 2023-02-01..2024-01-31
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+  [v4-discovery] |beta|<=5 cap: 222 -> 208 (14 dropped)
+  Fold 14: discovery=208 pairs
+  Fold 14: done in 31.2s | 208 pairs × 5 arms | skipped 0 no-data
+Fold 15 [2024-03] — slicing formation 2023-03-01..2024-02-29
+  [v4-discovery] 518 formation tickers
+  [v4-discovery] hard screens: 511 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 511 tickers (130305 pairs)...
+  [v4-discovery] pairwise tests done: 130305 candidates
+  [v4-discovery] |beta|<=5 cap: 194 -> 146 (48 dropped)
+  Fold 15: discovery=146 pairs
+  Fold 15: done in 29.6s | 146 pairs × 5 arms | skipped 0 no-data
+Fold 16 [2024-04] — slicing formation 2023-04-01..2024-03-31
+  [v4-discovery] 519 formation tickers
+  [v4-discovery] hard screens: 512 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 512 tickers (130816 pairs)...
+  [v4-discovery] pairwise tests done: 130816 candidates
+  [v4-discovery] |beta|<=5 cap: 172 -> 147 (25 dropped)
+  Fold 16: discovery=147 pairs
+  Fold 16: done in 29.0s | 147 pairs × 5 arms | skipped 0 no-data
+Fold 17 [2024-05] — slicing formation 2023-05-01..2024-04-30
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 513 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 513 tickers (131328 pairs)...
+  [v4-discovery] pairwise tests done: 131328 candidates
+  [v4-discovery] |beta|<=5 cap: 162 -> 149 (13 dropped)
+  Fold 17: discovery=149 pairs
+  Fold 17: done in 30.2s | 149 pairs × 5 arms | skipped 0 no-data
+Fold 19 [2024-07] — slicing formation 2023-07-01..2024-06-30
+  [v4-discovery] 520 formation tickers
+  [v4-discovery] hard screens: 514 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 514 tickers (131841 pairs)...
+  [v4-discovery] pairwise tests done: 131841 candidates
+  [v4-discovery] |beta|<=5 cap: 201 -> 180 (21 dropped)
+  Fold 19: discovery=180 pairs
+  Fold 19: done in 30.7s | 180 pairs × 5 arms | skipped 0 no-data
+Fold 20 [2024-08] — slicing formation 2023-08-01..2024-07-31
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 515 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 515 tickers (132355 pairs)...
+  [v4-discovery] pairwise tests done: 132355 candidates
+  [v4-discovery] |beta|<=5 cap: 177 -> 158 (19 dropped)
+  Fold 20: discovery=158 pairs
+  Fold 20: done in 30.5s | 158 pairs × 5 arms | skipped 0 no-data
+Fold 23 [2024-11] — slicing formation 2023-11-01..2024-10-31
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+  [v4-discovery] |beta|<=5 cap: 150 -> 137 (13 dropped)
+  Fold 23: discovery=137 pairs
+  Fold 23: done in 29.0s | 137 pairs × 5 arms | skipped 0 no-data
+Fold 24 [2024-12] — slicing formation 2023-12-01..2024-11-30
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+  [v4-discovery] |beta|<=5 cap: 126 -> 116 (10 dropped)
+  Fold 24: discovery=116 pairs
+  Fold 24: done in 29.0s | 116 pairs × 5 arms | skipped 0 no-data
+Fold 25 [2025-01] — slicing formation 2024-01-01..2024-12-31
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+  [v4-discovery] |beta|<=5 cap: 201 -> 195 (6 dropped)
+  Fold 25: discovery=195 pairs
+  Fold 25: done in 31.1s | 195 pairs × 5 arms | skipped 0 no-data
+Fold 27 [2025-03] — slicing formation 2024-03-01..2025-02-28
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+  [v4-discovery] |beta|<=5 cap: 191 -> 187 (4 dropped)
+  Fold 27: discovery=187 pairs
+  Fold 27: done in 30.3s | 187 pairs × 5 arms | skipped 0 no-data
+Fold 29 [2025-05] — slicing formation 2024-05-01..2025-04-30
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 520 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 520 tickers (134940 pairs)...
+  [v4-discovery] pairwise tests done: 134940 candidates
+  [v4-discovery] |beta|<=5 cap: 198 -> 186 (12 dropped)
+  Fold 29: discovery=186 pairs
+  Fold 29: done in 30.4s | 186 pairs × 5 arms | skipped 0 no-data
+Fold 30 [2025-06] — slicing formation 2024-06-01..2025-05-31
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+  [v4-discovery] |beta|<=5 cap: 216 -> 208 (8 dropped)
+  Fold 30: discovery=208 pairs
+  Fold 30: done in 31.2s | 208 pairs × 5 arms | skipped 0 no-data
+Fold 31 [2025-07] — slicing formation 2024-07-01..2025-06-30
+  [v4-discovery] 524 formation tickers
+  [v4-discovery] hard screens: 521 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 521 tickers (135460 pairs)...
+  [v4-discovery] pairwise tests done: 135460 candidates
+  [v4-discovery] |beta|<=5 cap: 212 -> 192 (20 dropped)
+  Fold 31: discovery=192 pairs
+  Fold 31: done in 31.7s | 192 pairs × 5 arms | skipped 0 no-data
+Fold 33 [2025-09] — slicing formation 2024-09-01..2025-08-31
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+  [v4-discovery] |beta|<=5 cap: 165 -> 156 (9 dropped)
+  Fold 33: discovery=156 pairs
+  Fold 33: done in 30.4s | 156 pairs × 5 arms | skipped 0 no-data
+Fold 34 [2025-10] — slicing formation 2024-10-01..2025-09-30
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+  [v4-discovery] |beta|<=5 cap: 168 -> 149 (19 dropped)
+  Fold 34: discovery=149 pairs
+  Fold 34: done in 29.9s | 149 pairs × 5 arms | skipped 0 no-data
+Fold 35 [2025-11] — slicing formation 2024-11-01..2025-10-31
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+  [v4-discovery] |beta|<=5 cap: 157 -> 141 (16 dropped)
+  Fold 35: discovery=141 pairs
+  Fold 35: done in 29.9s | 141 pairs × 5 arms | skipped 0 no-data
+Fold 36 [2025-12] — slicing formation 2024-12-01..2025-11-30
+  [v4-discovery] 527 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+  Fold 36: discovery=3 pairs
+  Fold 36: done in 27.3s | 3 pairs × 5 arms | skipped 0 no-data
+Fold 37 [2026-01] — slicing formation 2025-01-01..2025-12-31
+  [v4-discovery] 527 formation tickers
+  [v4-discovery] hard screens: 523 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 523 tickers (136503 pairs)...
+  [v4-discovery] pairwise tests done: 136503 candidates
+  [v4-discovery] |beta|<=5 cap: 232 -> 203 (29 dropped)
+  Fold 37: discovery=203 pairs
+  Fold 37: done in 32.0s | 203 pairs × 5 arms | skipped 0 no-data
+Fold 38 [2026-02] — slicing formation 2025-02-01..2026-01-31
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 524 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 524 tickers (137026 pairs)...
+  [v4-discovery] pairwise tests done: 137026 candidates
+  [v4-discovery] |beta|<=5 cap: 210 -> 202 (8 dropped)
+  Fold 38: discovery=202 pairs
+  Fold 38: done in 31.1s | 202 pairs × 5 arms | skipped 0 no-data
+Fold 39 [2026-03] — slicing formation 2025-03-01..2026-02-28
+  [v4-discovery] 528 formation tickers
+  [v4-discovery] hard screens: 524 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 524 tickers (137026 pairs)...
+  [v4-discovery] pairwise tests done: 137026 candidates
+  [v4-discovery] |beta|<=5 cap: 168 -> 158 (10 dropped)
+  Fold 39: discovery=158 pairs
+  Fold 39: done in 30.6s | 158 pairs × 5 arms | skipped 0 no-data
+Wrote per_pair.parquet: 19730 rows
+Wrote per_fold: 125 rows
+Wrote daily_pnl.parquet: 2565 rows
+=== Done. Run analyze.py 20260525_171400 for decision report. ===

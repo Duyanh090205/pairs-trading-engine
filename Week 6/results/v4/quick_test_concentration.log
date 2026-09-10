@@ -1,0 +1,103 @@
+=== Quick test: top-K concentration ===
+
+Folds: [1, 8, 18, 25, 33]
+K values (top-K by Johansen pval): [10, 20, 50, 100, 500]
+
+Loading cache + cost data...
+  Loaded in 1.2s
+
+--- Fold 1 (2023-01) ---
+  [v4-discovery] 511 formation tickers
+  [v4-discovery] hard screens: 506 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 506 tickers (127765 pairs)...
+  [v4-discovery] pairwise tests done: 127765 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 189 -> 175 (14 dropped)
+  Discovery: 175 pairs in 35.8s
+  K=  10: pairs_ran= 10, trades=  3, sharpe=+0.808, ret=+0.0004, zc/sl/eom= 0/ 0/  3 (0.3s)
+  K=  20: pairs_ran= 19, trades= 10, sharpe=-1.624, ret=-0.0021, zc/sl/eom= 0/ 0/ 10 (0.1s)
+  K=  50: pairs_ran= 39, trades= 25, sharpe=+0.149, ret=+0.0003, zc/sl/eom= 2/ 1/ 22 (0.3s)
+  K= 100: pairs_ran= 66, trades= 38, sharpe=-0.283, ret=-0.0007, zc/sl/eom= 2/ 1/ 35 (0.6s)
+  K= 500: pairs_ran= 95, trades= 54, sharpe=+2.170, ret=+0.0074, zc/sl/eom= 6/ 1/ 47 (0.6s)
+
+--- Fold 8 (2023-08) ---
+  [v4-discovery] 515 formation tickers
+  [v4-discovery] hard screens: 509 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 509 tickers (129286 pairs)...
+  [v4-discovery] pairwise tests done: 129286 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 91 -> 64 (27 dropped)
+  Discovery: 64 pairs in 34.8s
+  K=  10: pairs_ran=  5, trades=  2, sharpe=+1.468, ret=+0.0006, zc/sl/eom= 1/ 0/  1 (0.0s)
+  K=  20: pairs_ran=  5, trades=  2, sharpe=+1.468, ret=+0.0006, zc/sl/eom= 1/ 0/  1 (0.0s)
+  K=  50: pairs_ran=  5, trades=  2, sharpe=+1.468, ret=+0.0006, zc/sl/eom= 1/ 0/  1 (0.0s)
+  K= 100: pairs_ran=  7, trades=  4, sharpe=+4.571, ret=+0.0022, zc/sl/eom= 1/ 0/  3 (0.0s)
+  K= 500: pairs_ran=  7, trades=  4, sharpe=+4.571, ret=+0.0022, zc/sl/eom= 1/ 0/  3 (0.0s)
+
+--- Fold 18 (2024-06) ---
+  [v4-discovery] 521 formation tickers
+  [v4-discovery] hard screens: 514 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 514 tickers (131841 pairs)...
+  [v4-discovery] pairwise tests done: 131841 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 209 -> 195 (14 dropped)
+  Discovery: 195 pairs in 30.3s
+  K=  10: pairs_ran= 10, trades=  7, sharpe=+1.196, ret=+0.0009, zc/sl/eom= 2/ 0/  5 (0.0s)
+  K=  20: pairs_ran= 18, trades= 14, sharpe=-2.864, ret=-0.0042, zc/sl/eom= 3/ 0/ 11 (0.1s)
+  K=  50: pairs_ran= 33, trades= 23, sharpe=-3.643, ret=-0.0079, zc/sl/eom= 3/ 2/ 18 (0.1s)
+  K= 100: pairs_ran= 63, trades= 35, sharpe=-5.290, ret=-0.0133, zc/sl/eom= 4/ 3/ 28 (0.3s)
+  K= 500: pairs_ran=117, trades= 63, sharpe=-3.047, ret=-0.0073, zc/sl/eom= 9/ 3/ 51 (0.5s)
+
+--- Fold 25 (2025-01) ---
+  [v4-discovery] 522 formation tickers
+  [v4-discovery] hard screens: 517 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 517 tickers (133386 pairs)...
+  [v4-discovery] pairwise tests done: 133386 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 201 -> 195 (6 dropped)
+  Discovery: 195 pairs in 33.6s
+  K=  10: pairs_ran= 10, trades=  4, sharpe=-0.866, ret=-0.0007, zc/sl/eom= 0/ 0/  4 (0.0s)
+  K=  20: pairs_ran= 20, trades= 12, sharpe=+1.660, ret=+0.0017, zc/sl/eom= 2/ 0/ 10 (0.1s)
+  K=  50: pairs_ran= 50, trades= 32, sharpe=-1.936, ret=-0.0031, zc/sl/eom= 3/ 1/ 28 (0.3s)
+  K= 100: pairs_ran= 96, trades= 57, sharpe=+0.970, ret=+0.0022, zc/sl/eom= 8/ 2/ 47 (0.5s)
+  K= 500: pairs_ran=182, trades=112, sharpe=+0.949, ret=+0.0044, zc/sl/eom=19/ 3/ 90 (0.9s)
+
+--- Fold 33 (2025-09) ---
+  [v4-discovery] 525 formation tickers
+  [v4-discovery] hard screens: 522 survivors
+  [v4-discovery] fitting factor model (PCA on daily returns)...
+  [v4-discovery] running pairwise Johansen on 522 tickers (135981 pairs)...
+  [v4-discovery] pairwise tests done: 135981 candidates
+WARNING FALLBACK CAP: kept top 500 by p-value
+  [v4-discovery] |beta|<=5 cap: 165 -> 156 (9 dropped)
+  Discovery: 156 pairs in 33.8s
+  K=  10: pairs_ran= 10, trades=  5, sharpe=-6.716, ret=-0.0018, zc/sl/eom= 0/ 0/  5 (0.1s)
+  K=  20: pairs_ran= 15, trades=  8, sharpe=-5.018, ret=-0.0026, zc/sl/eom= 0/ 0/  8 (0.1s)
+  K=  50: pairs_ran= 26, trades= 14, sharpe=-6.564, ret=-0.0055, zc/sl/eom= 0/ 1/ 13 (0.2s)
+  K= 100: pairs_ran= 48, trades= 25, sharpe=-3.578, ret=-0.0058, zc/sl/eom= 2/ 1/ 22 (0.3s)
+  K= 500: pairs_ran= 68, trades= 40, sharpe=-0.920, ret=-0.0019, zc/sl/eom= 4/ 2/ 34 (0.4s)
+
+
+Wrote D:\Quant Finance\Quant Program\Week 6\results\v4\quick_test_concentration.csv (25 rows)
+
+=== Summary by K (averaged across 5 representative folds) ===
+     n_folds  avg_pairs_ran  sum_trades  mean_sharpe  median_sharpe  sum_return  avg_net_bps  sum_zc  sum_sl  sum_eom
+K                                                                                                                    
+10         5            9.0          21       -0.822          0.808      -0.001       -5.267       3       0       18
+20         5           15.4          46       -1.276         -1.624      -0.007      -57.620       6       0       40
+50         5           30.6          96       -2.105         -1.936      -0.016      -80.448       9       5       82
+100        5           56.0         159       -0.722         -0.283      -0.015       14.790      17       7      135
+500        5           93.8         273        0.744          0.949       0.005      113.429      39       9      225
+
+=== Sharpe by fold and K ===
+K       10     20     50     100    500
+fold                                   
+1    +0.808 -1.624 +0.149 -0.283 +2.170
+8    +1.468 +1.468 +1.468 +4.571 +4.571
+18   +1.196 -2.864 -3.643 -5.290 -3.047
+25   -0.866 +1.660 -1.936 +0.970 +0.949
+33   -6.716 -5.018 -6.564 -3.578 -0.920

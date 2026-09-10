@@ -1,0 +1,26 @@
+nap data 324 ma ...
+nap xong (8s)
+[2022Q1] +3,038 su kien k=3 (18s)
+[2022Q2] +2,323 su kien k=3 (22s)
+[2022Q3] +2,467 su kien k=3 (25s)
+[2022Q4] +2,161 su kien k=3 (28s)
+[2023Q1] +2,464 su kien k=3 (31s)
+[2023Q2] +2,657 su kien k=3 (35s)
+[2023Q3] +2,778 su kien k=3 (38s)
+[2023Q4] +2,108 su kien k=3 (40s)
+[2024Q1] +2,377 su kien k=3 (43s)
+[2024Q2] +2,584 su kien k=3 (46s)
+[2024Q3] +2,631 su kien k=3 (48s)
+[2024Q4] +2,046 su kien k=3 (51s)
+[2025Q1] +2,503 su kien k=3 (54s)
+[2025Q2] +2,459 su kien k=3 (57s)
+
+========== EVENT STUDY: HOI SAU CU GIAT RESIDUAL (14 quy, out-of-fit) ==========
+(rev > 0 = HOI ve; rev < 0 = tiep tuc truot. SE = sai so chuan cua mean)
+   k  N su kien  shock median |             rev@5p |            rev@15p |            rev@30p |            rev@60p |           rev@120p
+ 3.0     34,596       46.1bp |   +0.91±0.14 (53%+) |   +0.84±0.21 (53%+) |   +0.89±0.27 (52%+) |   +1.02±0.34 (52%+) |   +1.18±0.42 (52%+)
+ 4.0      6,834       63.2bp |   +0.84±0.49 (55%+) |   -0.08±0.69 (54%+) |   +0.32±0.81 (54%+) |   -0.17±0.97 (53%+) |   -0.51±1.17 (52%+)
+ 5.0      1,812       83.9bp |   -1.72±1.46 (55%+) |   -1.36±1.95 (55%+) |   -0.11±2.18 (56%+) |   +0.19±2.49 (55%+) |   -0.09±2.92 (54%+)
+
+Tham chieu: phi round-trip thuc (1 ma + hedge) ~ 12-16 bps.
+tong: 57s

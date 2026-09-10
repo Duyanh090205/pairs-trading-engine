@@ -1,0 +1,58 @@
+nap toan bo 5-min + 1-min cho 324 ma ...
+nap xong 324 ma (8s)
+[2022Q1] 304 ma | HL median 1515p | trong band: 8 | cum_var 0.60 (22s)
+[2022Q2] 304 ma | HL median 1429p | trong band: 3 | cum_var 0.59 (27s)
+[2022Q3] 304 ma | HL median 1431p | trong band: 9 | cum_var 0.89 (32s)
+[2022Q4] 304 ma | HL median 1313p | trong band: 5 | cum_var 0.64 (37s)
+[2023Q1] 304 ma | HL median 1788p | trong band: 4 | cum_var 0.52 (41s)
+[2023Q2] 304 ma | HL median 1271p | trong band: 5 | cum_var 0.43 (46s)
+[2023Q3] 304 ma | HL median 1461p | trong band: 1 | cum_var 0.42 (50s)
+[2023Q4] 304 ma | HL median 1364p | trong band: 4 | cum_var 0.45 (55s)
+[2024Q1] 304 ma | HL median 1275p | trong band: 12 | cum_var 0.40 (59s)
+[2024Q2] 304 ma | HL median 1348p | trong band: 8 | cum_var 0.42 (64s)
+[2024Q3] 304 ma | HL median 1337p | trong band: 5 | cum_var 0.72 (69s)
+[2024Q4] 304 ma | HL median 1423p | trong band: 7 | cum_var 0.43 (74s)
+[2025Q1] 304 ma | HL median 1335p | trong band: 4 | cum_var 0.44 (78s)
+[2025Q2] 304 ma | HL median 1238p | trong band: 10 | cum_var 0.73 (83s)
+
+========== ROBUSTNESS 14 CUA SO (out-of-fit, stocks only) ==========
+window  cum_var  n_stocks hl_p25 hl_median hl_p75  n_band  band_ratio_ge2 amp_median
+2022Q1    0.598       304   1020      1515   2184       8               8       86.1
+2022Q2    0.588       304    926      1429   2224       3               3       82.0
+2022Q3    0.887       304    960      1431   2311       9               8       66.3
+2022Q4    0.638       304    857      1313   2042       5               5       66.7
+2023Q1    0.516       304   1137      1788   2796       4               4       77.0
+2023Q2    0.427       304    837      1271   1819       5               5       65.5
+2023Q3    0.418       304    989      1461   2173       1               1       59.0
+2023Q4    0.449       304    939      1364   2102       4               3       59.0
+2024Q1    0.399       304    780      1275   1977      12              11       66.0
+2024Q2    0.420       304    884      1348   1862       8               7       65.7
+2024Q3    0.721       304    895      1337   1984       5               4       62.2
+2024Q4    0.429       304    857      1423   2339       7               4       65.7
+2025Q1    0.445       304    897      1335   2106       4               4       83.4
+2025Q2    0.735       304    831      1238   1777      10               8       57.7
+
+tong so ma tung vao band [2,390p]: 75 (tren 304 ma x 14 cua so)
+ma vao band >=2 cua so: 9
+  ETR: 3 lan — 2024Q1, 2025Q1, 2025Q2
+  NWSA: 2 lan — 2022Q1, 2024Q4
+  ADI: 2 lan — 2022Q2, 2024Q4
+  NKE: 2 lan — 2022Q3, 2024Q2
+  UNP: 2 lan — 2022Q4, 2023Q2
+  HOOD: 2 lan — 2023Q2, 2024Q4
+  PNC: 2 lan — 2024Q1, 2024Q2
+  AMD: 2 lan — 2024Q2, 2024Q3
+  AEE: 2 lan — 2025Q1, 2025Q2
+
+7 ma mep-band Q3/2024 — HL (phut) qua cac cua so:
+window  2022Q1  2022Q2  2022Q3  2022Q4  2023Q1  2023Q2  2023Q3  2023Q4  2024Q1  2024Q2  2024Q3  2024Q4  2025Q1  2025Q2
+ticker                                                                                                                
+AMD        712     589    3245    1354    6478    1995    1058    1353    2858     349     385    2448    2662    2811
+MMM       1152    1687    2572     788     487     500    1671    1116    3154    1404     189    1772    1825    3716
+NFLX       675     639    2364    2352    1403    1062    1955    2449     578    1762     431    1104    1231     942
+PCAR      1842    4027    1355     813    1114    2502    1292    1001    2081     937     407     916    1802    2777
+SRE       2980    3643    1634     886     870    1079    1277    1846    2507     463     284    2347    1274    2263
+TGT       1656     559    1146     576     539    2778    1848    1271    1245     675     442    1012    2823     189
+UBER       654    2265    2921     399    1159    1564     984    1234    1380    2844     334    2657     603    1443
+
+tong: 83s

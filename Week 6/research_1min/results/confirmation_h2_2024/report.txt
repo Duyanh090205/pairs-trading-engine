@@ -1,0 +1,46 @@
+universe 100 | 128 ngay H2/2024 | 4,950 cap
+[tuan bat dau 2024-07-16] xong (44s)
+[tuan bat dau 2024-07-23] xong (82s)
+[tuan bat dau 2024-07-30] xong (122s)
+[tuan bat dau 2024-08-06] xong (185s)
+[tuan bat dau 2024-08-13] xong (234s)
+[tuan bat dau 2024-08-20] xong (270s)
+[tuan bat dau 2024-08-27] xong (317s)
+[tuan bat dau 2024-09-04] xong (356s)
+[tuan bat dau 2024-09-11] xong (397s)
+[tuan bat dau 2024-09-18] xong (441s)
+[tuan bat dau 2024-09-25] xong (474s)
+[tuan bat dau 2024-10-02] xong (517s)
+[tuan bat dau 2024-10-09] xong (565s)
+[tuan bat dau 2024-10-16] xong (604s)
+[tuan bat dau 2024-10-23] xong (655s)
+[tuan bat dau 2024-10-30] xong (693s)
+[tuan bat dau 2024-11-06] xong (729s)
+[tuan bat dau 2024-11-13] xong (769s)
+[tuan bat dau 2024-11-20] xong (807s)
+[tuan bat dau 2024-11-27] xong (842s)
+[tuan bat dau 2024-12-05] xong (875s)
+[tuan bat dau 2024-12-12] xong (908s)
+[tuan bat dau 2024-12-19] xong (955s)
+
+========== VONG XAC NHAN H2/2024 ==========
+    F        mode       N       gop bp      t     ctl  t_diff     NET
+ 0.5d  lag1_close  69,293     +0.33±1.40   +0.2   +1.65    -0.7   -13.4
+ 0.5d  lag2_close  69,293     +0.30±1.39   +0.2   +1.34    -0.5   -13.4
+ 0.5d  lag3_close  69,293     -0.03±1.39   -0.0   +1.16    -0.6   -13.8
+ 0.5d   lag1_open  69,293     -0.34±1.40   -0.2   +1.09    -0.7   -14.1
+   1d  lag1_close  95,799     +7.99±1.05   +7.6   +1.65    +2.6    -5.7
+   1d  lag2_close  95,799     +6.65±1.05   +6.3   +0.87    +2.4    -7.1
+   1d  lag3_close  95,799     +5.87±1.06   +5.6   +1.09    +2.0    -7.8
+   1d   lag1_open  95,799     +7.92±1.06   +7.5   +0.94    +2.9    -5.8
+   2d  lag1_close  59,455    +10.80±1.38   +7.8   +1.19    +3.0    -2.9
+   2d  lag2_close  59,455    +10.19±1.39   +7.3   +0.14    +3.1    -3.5
+   2d  lag3_close  59,455     +9.44±1.38   +6.8   +0.38    +2.8    -4.3
+   2d   lag1_open  59,455    +10.26±1.39   +7.4   -0.03    +3.2    -3.4
+
+----- CHAM DIEM (luat pre-commit) -----
+0.5d: Mon1(data moi) ROT | Mon2(lag2 giu 92%, lag3 -10%) DAU | Mon3(open-fill giu -105%) ROT
+1d: Mon1(data moi) DAU | Mon2(lag2 giu 83%, lag3 73%) DAU | Mon3(open-fill giu 99%) DAU
+2d: Mon1(data moi) DAU | Mon2(lag2 giu 94%, lag3 87%) DAU | Mon3(open-fill giu 95%) DAU
+
+tong: 956s

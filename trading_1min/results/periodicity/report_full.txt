@@ -1,0 +1,45 @@
+===== PERIODICITY SCAN (full) — spec pre-commit periodicity_spec.md =====
+universe 100 | 374 phien | 4,847 (ngay,khung)
+
+[FM]   gamma_A (same-slot)      = +0.0020  t_ngay = +0.74  (359 ngay)
+[FM]   gamma_A - gamma_B        = +0.0057  t_ngay = +1.57
+[econ] decile L-S gross         = +0.32 bp/luot  t_ngay = +0.88
+[econ] san phi danh muc (mean)  = 7.56 bp
+
+[chan doan] gamma_A theo khung nua-gio:
+  khung  0 (09:30) gamma_A +0.0114 (t +1.2, 359 ngay)
+  khung  1 (10:00) gamma_A -0.0078 (t -0.8, 359 ngay)
+  khung  2 (10:30) gamma_A -0.0005 (t -0.1, 359 ngay)
+  khung  3 (11:00) gamma_A -0.0050 (t -0.6, 359 ngay)
+  khung  4 (11:30) gamma_A +0.0036 (t +0.4, 359 ngay)
+  khung  5 (12:00) gamma_A +0.0083 (t +0.9, 359 ngay)
+  khung  6 (12:30) gamma_A +0.0053 (t +0.6, 359 ngay)
+  khung  7 (13:00) gamma_A -0.0128 (t -1.4, 359 ngay)
+  khung  8 (13:30) gamma_A -0.0017 (t -0.2, 356 ngay)
+  khung  9 (14:00) gamma_A -0.0033 (t -0.4, 356 ngay)
+  khung 10 (14:30) gamma_A -0.0082 (t -0.8, 356 ngay)
+  khung 11 (15:00) gamma_A +0.0094 (t +0.9, 356 ngay)
+  khung 12 (15:30) gamma_A +0.0256 (t +2.7, 356 ngay)
+
+[ban do] ho so 13 khung nua-gio (universe 100, 2024-01->2025-06):
+  09:30  |r|  58.6bp  vol  8.18%  half-spread  4.56bp
+  10:00  |r|  36.4bp  vol  8.03%  half-spread  3.46bp
+  10:30  |r|  28.1bp  vol  7.83%  half-spread  3.25bp
+  11:00  |r|  25.5bp  vol  7.70%  half-spread  3.29bp
+  11:30  |r|  22.1bp  vol  7.56%  half-spread  4.11bp
+  12:00  |r|  20.5bp  vol  7.44%  half-spread  4.00bp
+  12:30  |r|  19.5bp  vol  7.37%  half-spread  3.89bp
+  13:00  |r|  20.3bp  vol  7.25%  half-spread  3.72bp
+  13:30  |r|  19.2bp  vol  7.29%  half-spread  3.45bp
+  14:00  |r|  20.1bp  vol  7.41%  half-spread  3.05bp
+  14:30  |r|  17.2bp  vol  7.50%  half-spread  2.55bp
+  15:00  |r|  18.8bp  vol  7.77%  half-spread  1.76bp
+  15:30  |r|  25.5bp  vol  8.66%  half-spread  0.94bp
+
+**********************************************************************
+(a) dau vet HKS:  t(gA)=+0.74, t(gA-gB)=+1.57  -> TRUOT
+(b) an duoc phi:  gross +0.32 vs san 7.56 bp, t=+0.88  -> TRUOT
+PHAN QUYET: hieu ung HKS khong con dau vet dat chuan tren data ta -> dong nhanh alpha.
+Ban do thuc thi (slot_map.csv) giao nguyen ven trong moi kich ban.
+**********************************************************************
+tong: 17s
