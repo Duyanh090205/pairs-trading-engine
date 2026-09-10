@@ -38,8 +38,12 @@ _FALLBACK_SPREAD_STD = 15.0   # triggers Plan 1's 15-bps impact fallback equival
 # is audit-defensible against real execution.
 _COMMISSION_BPS_PER_SIDE_PER_LEG = 2.0
 
-_WEEK5_SUMMARY = Path(r"d:\Quant Finance\Quant Program\Week 5\data\microstructure\spread_summary.parquet")
-_DEFAULT_CACHE = Path(r"d:\Quant Finance\Quant Program\Week 6\cost\daily_spread_cache.parquet")
+# Repo root derived from this file's location (robust to the 2026-07 folder
+# rename 'Quant Program' -> 'Pairs Trading Strategy'). parents[2] = repo root
+# (engine_daily -> Week 6 -> root).
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+_WEEK5_SUMMARY = _REPO_ROOT / "Week 5" / "data" / "microstructure" / "spread_summary.parquet"
+_DEFAULT_CACHE = _REPO_ROOT / "Week 6" / "cost" / "daily_spread_cache.parquet"
 
 
 def assign_kappa_tier(median_full_spread_bps: float) -> float:

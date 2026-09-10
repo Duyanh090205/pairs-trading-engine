@@ -63,7 +63,9 @@ from engine_daily.regime_detector import (
 from engine.phase1_cointegration.factor_residual import project_residual
 
 # ---- Constants ----
-VALIDATED_DIR = Path(r"d:\Quant Finance\Quant Program\Week 4\data\validated")
+VALIDATED_DIR = WEEK6_ROOT.parent / "Week 4" / "data" / "validated"  # robust to
+                                              # 2026-07 rename 'Quant Program' ->
+                                              # 'Pairs Trading Strategy'
 DATA_DAILY = VALIDATED_DIR / "daily_phase3"   # pre-built daily parquets
                                               # (see build_daily_parquets.py)
 
