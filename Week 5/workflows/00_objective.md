@@ -10,7 +10,7 @@
 
 **Scope Boundary:** This week **measures** friction on the existing strategy. We do NOT modify the strategy itself (no sizing changes, no new entry/exit gates, no regime suppression). Same signals, same positions — different cost model.
 
-**Data:** `orderbook.parquet` — 213M rows, 504–526 tickers, 1-min frequency, 2022-01-03 to 2026-03-19. 3-level limit order book (L1/L2/L3 bid/ask price + size).
+**Data:** `orderbook.parquet` — 213M rows, 504–526 tickers, 1-min frequency, 2022-01-03 to 2026-03-19. 3 quote levels (L1/L2/L3 bid/ask price + size), constructed from close prices plus a modelled spread series — not a vendor order book.
 
 ---
 

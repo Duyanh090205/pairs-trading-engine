@@ -1,6 +1,26 @@
-# Week 6 — V3.0 Engine Scaffold
+# Week 6 — Live Deployment & Self-Audit
 
-**Theme:** Fix the patchwork. Make the engine tell *one* story before going live.
+> **This document is the V3.0 scaffold plan, kept as written. What actually happened is in
+> [`documents/log.md`](documents/log.md), and it diverges from this page in three ways.**
+>
+> - **V3.0 was abandoned.** The intraday rebuild lost 24% cumulatively over 28 folds, winning
+>   4 of them. The week continued as **V4**, a daily engine.
+> - **It did go live.** The section below saying broker integration is "deferred to Week 7+"
+>   is wrong. The engine traded on Alpaca paper from **2026-05-28**: five trades in the first
+>   week, all force-closed at month end, **−$313.05** on a $100,000 account, and **−$457.99**
+>   running to 2026-07-24, reconciled against the broker to eight cents after a
+>   multi-lifecycle P&L contamination bug was found and fixed. Thirteen sessions froze from
+>   2026-07-06 on a stale-reconcile halt. **The engine has since been stopped.**
+> - **V4 was then audited to destruction, by me.** 27 pairs with |β| between 50 and 2,708 were
+>   producing 103% of total P&L; capping |β| at 5 moved annualized Sharpe from +0.66 to −0.45.
+>   A separately reported +1.37 Sharpe regime improvement was withdrawn after two compounded
+>   look-ahead errors were found in it, and the best surviving configuration's regime filter
+>   lost $1,189 in an April–July 2026 live replay where trading unfiltered made $11,304.
+>
+> The go-live gates listed further down were never all cleared. Read them as the bar that was
+> set, not as a bar that was met.
+
+**Theme (as planned):** Fix the patchwork. Make the engine tell *one* story before going live.
 
 ## Thesis
 
@@ -160,14 +180,19 @@ These are documented gaps. V3.0 ships with them; future weeks may address.
 - Not a new pipeline. ~70% is standard Avellaneda-Lee, ~25% is V2.0 engineering kept
   intact, ~5% is honest re-naming. The novelty is *integration coherence*, not method.
 - Not point-in-time. Universe is today's S&P 500; bias flagged above.
-- Not live. Broker integration, paper trading dashboard, drift monitor, and live
+- ~~Not live. Broker integration, paper trading dashboard, drift monitor, and live
   factor exposure monitor are deferred to Week 7+, contingent on V3.0 backtest
-  clearing all 10 go-live gates.
+  clearing all 10 go-live gates.~~ **Overtaken by events.** V3.0 was dropped, V4 went to
+  Alpaca paper on 2026-05-28 without all ten gates cleared, and the deployment is described
+  in [`documents/log.md`](documents/log.md).
 
 ## Status
 
-Scaffold + modifications complete. Pending: smoke test verification, single-fold smoke
-run, full 45-fold backtest, A/B test, diagnostics. Then evaluate against go-live gates.
+**Closed.** V3.0 was abandoned after the intraday rebuild lost 24% over 28 folds. V4
+replaced it, traded live on Alpaca paper from 2026-05-28 to 2026-07-24 for −$457.99, and
+was then audited down to no alpha. The engine is stopped. The plan below is the plan as it
+stood before any of that.
 
-For the full plan (audit findings, per-function hard stops, per-step deltas), see
-`C:\Users\nguye\.claude\plans\oke-now-pull-me-piped-hopcroft.md`.
+The V3.0 planning document (audit findings, per-function hard stops, per-step deltas) was a
+local working file and is not in this repository. What replaced it, and what was actually
+run, is in [`documents/log.md`](documents/log.md).

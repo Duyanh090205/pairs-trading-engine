@@ -2,6 +2,11 @@
 
 **Theme:** The Friction.
 
+> **Correction notice.** Some figures on this page were withdrawn after later checking.
+> The list of what was withdrawn and why is in the [root README](../README.md#corrections),
+> and the current conclusions are in [`Week 6/documents/log.md`](../Week%206/documents/log.md).
+
+
 ## Objective
 
 Determine whether the Week 4 strategy's alpha survives when the static 60 bps cost assumption is replaced with empirical bid-ask spreads that widen during spread instability. Does alpha survive — or was it an illusion eaten by friction?
@@ -29,10 +34,21 @@ The pipeline is structured as four plans:
 | **Frequency** | 1-minute (dominant; some 2–5 min gaps) |
 | **Tickers** | 504 (2022-01) → 526 (2026-03) |
 | **Date Range** | 2022-01-03 09:00 → 2026-03-19 23:59 |
-| **Structure** | 3-level limit order book (L1/L2/L3 bid/ask price + size) |
+| **Structure** | 3 quote levels (L1/L2/L3 bid/ask price + size). **Not a vendor order book** — see the data-provenance note below. |
 | **L1 Spread** | Universe median ~10 bps; SPY ~4.7 bps; max > 150 bps (stress) |
+| **Provenance** | Constructed for this project from close prices plus a modelled spread series |
 
-**Known Limitation:** `bid_sz == ask_sz` at all levels (symmetric/synthetic LOB). No order-flow imbalance signals can be derived.
+**Data provenance, and the limits it puts on this week.** This panel was built for the project
+rather than bought: L1 quotes are reconstructed from close prices plus a modelled spread
+series, and the deeper levels are generated from L1. It is not measured market microstructure,
+and nothing here should be described as such.
+
+The generated structure is visible in the file. `bid_sz == ask_sz` in 100% of rows at every
+level, the L2 spread is exactly twice the L1 spread, L3 sits on a few discrete multiples, and
+the L1 mid equals the close to within 1e-6 in 82.3% of AAPL bars. No order-flow imbalance
+signal can be derived from it, and the cost model below should be read as a spread *model*
+calibrated to a plausible spread series, not as an empirical measurement of what execution
+would have cost.
 
 ## Method
 
@@ -42,7 +58,7 @@ $$C_{total}(t) = C_{spread}(t) + C_{impact}(t) + C_{borrow}(t)$$
 
 | Component | Formula | Description |
 |-----------|---------|-------------|
-| **Spread Cost** | `half_spread_l1_bps(t)` | Empirical, varies per ticker per bar |
+| **Spread Cost** | `half_spread_l1_bps(t)` | From the modelled L1 series, varies per ticker per bar |
 | **Market Impact** | `κ × spread_std_1d(t)` | Spread-instability-scaled; κ pre-assigned by liquidity tier |
 | **Borrow Cost** | `(rate / 10,000) / 365 × short_notional` | Daily accrual on short leg (50 bps/yr default; calendar-day convention) |
 

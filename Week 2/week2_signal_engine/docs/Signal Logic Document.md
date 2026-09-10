@@ -2,6 +2,14 @@
 
 ## Week 2: Z-Score Signal Engine for Pairs Trading
 
+> **Correction notice, added 2026-09-10.** The β drift percentage on this page is withdrawn.
+> It was typed into markdown rather than computed, no denominator in the source run
+> reproduces it, it describes a single pair, and most of the divergence was already present
+> at the end of the formation window. The estimator it came from is also misnamed: the
+> production path fixes δ at 1e-7, which makes the spread static rather than Kalman-filtered.
+> See the [root README](../../../README.md#corrections).
+
+
 **Author:** [Your Name]  
 **Date:** April 2026  
 **Primary Pair:** CMS / DUK (Utilities) | **Secondary Pair:** DOW / LYB (Materials)  

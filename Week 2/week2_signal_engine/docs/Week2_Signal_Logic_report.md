@@ -1,5 +1,13 @@
 # Methodology Summary — Week 2
 ## Pairs Trading Z-Score Signal Engine
+
+> **Correction notice, added 2026-09-10.** The β drift percentage on this page is withdrawn.
+> It was typed into markdown rather than computed, no denominator in the source run
+> reproduces it, it describes a single pair, and most of the divergence was already present
+> at the end of the formation window. The estimator it came from is also misnamed: the
+> production path fixes δ at 1e-7, which makes the spread static rather than Kalman-filtered.
+> See the [root README](../../../README.md#corrections).
+
 **Year:** 2022 | **Primary Pair:** CMS / DUK | **Secondary Pair:** DOW / LYB  
 **Data:** 1-minute OHLC, NYSE session, DST-aware (09:30–16:00 ET)  
 **Engine:** Static OLS hedge ratio + rolling Z-score + path-dependent state machine  

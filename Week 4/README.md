@@ -2,6 +2,11 @@
 
 **Theme:** The Defense.
 
+> **Correction notice.** Some figures on this page were withdrawn after later checking.
+> The list of what was withdrawn and why is in the [root README](../README.md#corrections),
+> and the current conclusions are in [`Week 6/documents/log.md`](../Week%206/documents/log.md).
+
+
 ## Objective
 
 Defend the cointegration pairs trading strategy before an AI Investment Committee by proving it generalizes across both Bear (2022) and Bull (2023–2026) market regimes. Produce a comprehensive Strategy Whitepaper.
@@ -15,8 +20,12 @@ A **Strategy Whitepaper** covering the cointegration thesis, signal logic, and v
 - Implement a 5-phase production pipeline: Data Gateway → Cointegration Discovery → Signal Generation & Execution → Backtest & Validation → Multi-Regime Defense.
 - Upgrade from Engle-Granger to **Johansen cointegration test** (symmetric, multivariate).
 - Replace OLS hedge ratios with **PCA (secondary eigenvector)** for formation and **2D Kalman Filter** for execution.
-- Run a **45-fold monthly rolling walk-forward** validation (6-month formation, 1-month trading).
-- Execute **One-At-a-Time (OAT) sensitivity analysis** across 9 parameters (~27 additional runs × 45 folds).
+- Run a **monthly rolling walk-forward** validation (6-month formation, 1-month trading).
+  45 folds were configured; **25 produced results**, and it is 25 that every reported number
+  is computed from.
+- Execute **One-At-a-Time (OAT) sensitivity analysis**. Nine parameters were planned; 7 were
+  declared, 5 produced output, and 2 actually re-ran the structure across 23 folds. The
+  interaction combos defined in `sensitivity.py` have no result files.
 - Validate with negative controls, latency stress tests, and overfitting diagnostics (DSR + PBO).
 
 ## Data
@@ -38,7 +47,9 @@ Standalone vectorized module with timestamp normalization, session filtering, Z-
 - **OU Half-Life:** [1, 10] trading days (recalibrated from Week 1's [5, 60] for intraday execution).
 
 ### Phase 2 — Signal Generation & Execution
-- **Kalman Filter:** 2D state `[α, β]` with auto-selected δ via multi-criterion optimization (kurtosis + half-life + ACF78).
+- **Kalman Filter:** 2D state `[α, β]` with a δ selector using kurtosis, half-life and ACF78.
+  **The selector never runs.** `run_final_pipeline.py` sets `FIXED_DELTA = 1e-7`, which
+  bypasses it and reduces the filter to a static spread.
 - **Spread:** Computed from Kalman **prior** state (genuine OOS residual).
 - **State Machine:** Z = ±2.0 entry, zero-crossing exit, Numba @njit.
 - **Position Sizing:** Dollar-normalized, threshold rebalance at 10% β drift (with hysteresis dead band).

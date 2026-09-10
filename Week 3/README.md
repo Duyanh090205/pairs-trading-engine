@@ -2,13 +2,18 @@
 
 **Theme:** The Verification.
 
+> **Correction notice.** Some figures on this page were withdrawn after later checking.
+> The list of what was withdrawn and why is in the [root README](../README.md#corrections),
+> and the current conclusions are in [`Week 6/documents/log.md`](../Week%206/documents/log.md).
+
+
 ## Objective
 
 Build a verified backtest engine with institutional-grade PnL mechanics, and construct a systematic framework for detecting look-ahead bias through deliberate data corruption experiments.
 
 ## Deliverables
 
-1. **Deliverable 1 — "Creating the Bad Data":** Four distinct look-ahead bias injection methods (future-close substitution, timestamp backdating, spread-level injection, full-dataset normalization leak), each swept across 5 contamination levels (10%–50%) to produce 20 flawed datasets. The goal is to empirically measure how each type of bias inflates strategy Sharpe.
+1. **Deliverable 1 — "Creating the Bad Data":** Four distinct look-ahead bias injection methods (future-close substitution, timestamp backdating, spread-level injection, full-dataset normalization leak), each swept across 6 contamination levels (5%–50%) to produce 24 flawed datasets. The goal is to empirically measure how each type of bias inflates strategy Sharpe.
 
 2. **Deliverable 2 — Verified Backtest Log:** A 7-section audit log including trade logs, timestamp verification proof, Sharpe sensitivity tables, sizing comparison, threshold sensitivity, and negative control results — serving as a reproducible audit trail.
 
@@ -17,7 +22,7 @@ Build a verified backtest engine with institutional-grade PnL mechanics, and con
 - Implement a custom vectorized backtest engine (pandas + Numba) inheriting the Week 2 signal logic.
 - Run the engine under two parallel sizing regimes: static OLS β and monthly Kalman β rebalance.
 - Compute daily mark-to-market PnL with 60 bps round-trip transaction costs (split 30 bps entry + 30 bps exit).
-- Perform Sharpe sensitivity analysis across all 20 flawed datasets + 1 clean baseline.
+- Perform Sharpe sensitivity analysis across all 24 flawed datasets + 1 clean baseline.
 - Execute engine-level vs. data-level bias comparison.
 - Validate with negative control pairs (CVNA/ISRG, INTC/JPM).
 
@@ -43,14 +48,33 @@ Build a verified backtest engine with institutional-grade PnL mechanics, and con
 | H1 — Future Close | Replace `close[t]` with `close[t+1]` for k% rows | High | Low |
 | H2 — Timestamp Backdating | Subtract 60s from `window_start` for k% rows | Medium | High |
 | H3 — Spread Injection | Write `S(t+1)` into `spread_biased` at row t | High | Medium |
-| H4 — Normalization Leak | Normalize k% tickers using full-year mean/std | Very High | Very High |
+| H4 — Normalization Leak | Normalize k% tickers using full-year mean/std | Very High | ~~Very High~~ **Low — see below** |
 
 ### Sensitivity Analyses
-- **CP6a:** 20-cell Sharpe table (4 methods × 5 k-values).
+- **CP6a:** 24-cell Sharpe table (4 methods × 6 k-values).
 - **CP6b:** Engine-level injection (`position[t] = position[t]` removes execution lag).
 - **CP6c:** OLS sizing vs. Kalman sizing comparison.
 - **CP6d:** Z = 2.0 vs Z = 2.57 threshold sensitivity.
 - **CP6e:** Negative control sanity check.
+
+### What the sweep actually found
+
+**H4 is the easiest of the four to detect, not the hardest.** The table above was written
+before the sweep ran. Because the z-score is applied to the `close` column, roughly 47% of
+prices come out negative, and the crudest OHLC consistency check in the audit flags between
+96,972 and 482,633 offending rows at every contamination level — the highest count in the
+study. The project's own backtest report puts it plainly: z-scored prices destroy the pair
+relationship entirely rather than merely inflating apparent edge.
+
+**Read the zero-cost column, not the 60 bps one.** Friction is a drag that does not depend on
+signal quality, so the honest test of whether a bias manufactures edge is the run with costs
+switched off. There, only H1 raises Sharpe. H2, H3 and H4 all lower it.
+
+**The audit flags 24 of 24, and that is a weaker claim than it sounds.** Its four checks are
+OHLC consistency, duplicate timestamps, out-of-session timestamps, and column naming. None of
+them recomputes a value from source or compares against a clean copy, so H3 is caught only
+because the injected column is named `spread_biased`. Renaming it to `close` passes all four.
+The framework detects traces of injection, not look-ahead bias.
 
 ## Directory Structure
 
@@ -64,7 +88,7 @@ Week 3/
 │   └── verify_params.py   # Parameter verification
 ├── notebooks/             # Analysis notebooks
 ├── logs/                  # Backtest audit logs
-├── data/                  # Clean + 20 flawed datasets (gitignored)
+├── data/                  # Clean + 24 flawed datasets (gitignored)
 ├── Week3_Final_Plan_v3.md
 └── Week3_Workflow_Checkpoint.md
 ```

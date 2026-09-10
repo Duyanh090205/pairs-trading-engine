@@ -4,6 +4,54 @@
 
 ---
 
+> ## RETRACTION NOTICE — added 2026-09-10
+>
+> **The headline result below does not stand. The retraction is mine, and it came from my own
+> follow-up work rather than from anyone reviewing this paper.**
+>
+> This whitepaper reports a mean fold Sharpe of **+0.995** over 25 completed folds, and the
+> project elsewhere reported **1.978**. Four things invalidate that.
+>
+> **1. The Sharpe was computed the wrong way.** It annualized a series of exit-date daily
+> returns only, roughly 90 observations, by √252. That inflates the ratio by about
+> √(432/90) ≈ 2.2×. Rebuilt on the full daily series it is **0.5031 gross and 0.4428 net**
+> (`Week 5/results/methodology_results.md`). In the same pass the deflated-Sharpe trial count
+> was found to be set to the number of folds rather than the number of configurations tested;
+> corrected, the DSR p-value falls to 0.0000 against an E[max SR] threshold of 2.05, which
+> means the strategy fails its own significance screen.
+>
+> **2. The profit is an artifact of an unbounded hedge ratio.** There is no cap on |β|
+> anywhere in this week's code. Three trades in April 2025, all in fold 34 and all on the
+> same name, account for **128%** of net P&L; the largest ran at β = −24.04 with both legs
+> long, which is a directional bet booked as a market-neutral pair. Auditing the same
+> mechanism in the V4 rebuild found **27 pairs with |β| between 50 and 2,708 producing 103%
+> of total P&L**, and capping |β| at 5 moved annualized Sharpe from **+0.66 to −0.45**.
+>
+> **3. The real return was never reported anywhere in this paper.** Recombining the fold
+> equity curves gives **+3.01% over 3.66 years**, about +0.81% a year. The per-fold equity
+> series each reset to 1.0, so no reader of the original artifacts could have found this. A
+> sibling configuration in the same sweep reports mean Sharpe **+1.706** while losing
+> **17.65%** of capital, which is the clearest evidence that the Sharpe here has come loose
+> from the money.
+>
+> **4. The overfitting diagnostics describe a different run.** The PBO of 0.030 and DSR ≈ 0
+> quoted in §8 come from a Version 1.0 output whose first column reads
+> `raw_sharpe_annual = −1.116`, and which does not reproduce against the V2.0 numbers in this
+> paper. The `n_trials` used there is the fold count, not the number of configurations tried.
+>
+> Smaller claims below that the artifacts contradict: the walk-forward is described as
+> 45-fold when 25 folds produced results; the exit-reason split is reported as 98% zero-cross
+> and 2% end-of-window when the trade log gives 85.6% and 14.4%; the embargo gap is not
+> implemented; and stop-loss is reported as tested and rejected when one of the two
+> experiments favoured it and only the negative one was carried into this paper.
+>
+> The paper is left unedited below this line so the sequence stays on the record: this is what
+> was claimed, and `Week 6/documents/log.md` is what survived checking it. That log's
+> conclusion is that the strategy has no alpha on liquid S&P 500 names over 2023–2026 under
+> realistic costs.
+
+---
+
 ## Executive Summary
 
 This paper presents a **statistical arbitrage strategy** that trades mean-reversion in cointegrated equity pairs across the S&P 500 universe. The strategy is built from first principles on the 2022–2026 sample — a period that includes the 2022 Bear market, three distinct Bull phases, the May 2023 AI rally, and the October 2025 tariff-volatility episode.

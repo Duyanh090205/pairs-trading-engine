@@ -2,6 +2,11 @@
 
 **Theme:** The Signal.
 
+> **Correction notice.** Some figures on this page were withdrawn after later checking.
+> The list of what was withdrawn and why is in the [root README](../README.md#corrections),
+> and the current conclusions are in [`Week 6/documents/log.md`](../Week%206/documents/log.md).
+
+
 ## Objective
 
 Build a vectorized, stateful Z-score signal engine that translates cointegrated spreads into actionable entry/exit signals, validated on candidate pairs from Week 1.
@@ -16,7 +21,8 @@ A **Signal Logic Document** specifying the complete rules of engagement: spread 
 - Implement a rolling Z-score engine with half-life-derived window sizes.
 - Build a Numba-compiled state machine for path-dependent position tracking.
 - Validate signal behavior through distribution diagnostics, threshold sensitivity, and rolling regime monitoring.
-- Introduce a Rolling Kalman Filter for dynamic hedge ratio estimation (sizing upgrade for Week 3+).
+- Introduce a Rolling Kalman Filter for dynamic hedge ratio estimation (sizing upgrade for
+  Week 3+). See the correction notice above on what this estimator turned out to be.
 
 > **Important:** This week is strictly for signal generation and trade timing validation. It is *not* a profitability backtest. Transaction costs, stop-losses, and overnight gap handling are deferred to Week 3.
 
@@ -46,7 +52,11 @@ A **Signal Logic Document** specifying the complete rules of engagement: spread 
 - Cross-pair comparison (β, half-life, Hurst, trade count).
 - Threshold sensitivity sweep: fixed ±2.0 vs. adaptive (|Z| 95th percentile from formation).
 - Rolling Hurst exponent for regime monitoring.
-- Kalman Filter analysis: 25.5% static β drift discovered → motivates dynamic rebalancing.
+- Kalman Filter analysis, as originally reported: a 25.5% static β drift motivating dynamic
+  rebalancing. **Withdrawn.** The percentage was typed into markdown rather than computed, no
+  denominator in the source run reproduces it, it covers a single pair, and most of the
+  divergence was already present at the end of the formation window. Week 6 also established
+  that the production path fixes δ at 1e-7, which makes this a static spread, not a Kalman one.
 
 ## Directory Structure
 

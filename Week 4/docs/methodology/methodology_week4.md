@@ -1,6 +1,12 @@
 # Week 4: The Signal — Project 1 Review: The "Thesis Defense"
 
 ## Overview
+
+> **Correction notice, added 2026-09-10.** The β drift percentage on this page is withdrawn,
+> and the headline walk-forward result this methodology supports was retracted in Week 6.
+> See the retraction notice at the top of `Week 4/results/strategy_whitepaper.md` and
+> `Week 6/documents/log.md`.
+
 **Milestone:** The "Strategy Whitepaper."
 
 **The Defense:** You must defend your signal to the AI Investment Committee.

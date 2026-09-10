@@ -1,6 +1,17 @@
 # WEEK 5 QUANT RESEARCH MEMO
 ## Net-of-Fees Validation — Pairs Trading Strategy
-**Date:** 2026-05-03 | **Status:** Real microstructure (data/orderbook.parquet ingested); production run completed
+
+> **Correction notice, added 2026-09-10.** Two things on this page did not survive later
+> checking. The verdict line calls the strategy a survivor of friction, while this same
+> document reports DSR p = 0.000 against an E[max SR] threshold of 2.05 and a negative
+> control passing in only 8 of 22 folds — that is a strategy failing its own significance
+> screen, and the friction verdict should not be read without it. And the quote panel this
+> cost model is calibrated on is not measured microstructure: it was constructed for the
+> project from close prices plus a modelled spread series, with the deeper levels generated
+> from L1. Week 6 later found the underlying edge to be an artifact of unbounded hedge
+> ratios; see [`Week 6/documents/log.md`](../../Week%206/documents/log.md).
+
+**Date:** 2026-05-03 | **Status:** ~~Real microstructure~~ **modelled quote panel** (data/orderbook.parquet ingested, provenance corrected above); production run completed
 
 ---
 
